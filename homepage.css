@@ -1,0 +1,153 @@
+body{
+    background-color: #23272A;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: #eff3f5;
+  }
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .divmain{
+    margin: auto;
+    width: 50%;
+    border-top: 3px solid #5865F2 ;
+    outline: solid black 1px;
+    background-color: #2c2f33;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eff3f5;
+}
+
+.about{
+    font-size: 22px;
+    padding: 20px;
+}
+
+.aspan{
+    color: red;
+    font-family:  sans-serif;
+}
+.pfp{
+    width: 210px;
+    border-radius: 180px;
+    border: #ffe3f5 solid 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profilename{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+}
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #1eb7f4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.socialbutton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f0189d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.socialbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.socialbutton:hover span {
+  padding-right: 25px;
+}
+
+.socialbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
