@@ -1,0 +1,131 @@
+
+/* Visited link*/
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(61, 183, 231);
+    text-decoration: none;
+    
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: none;
+  }
+
+  body{
+    margin: auto;
+    background-color: #181414;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 150%;
+}
+
+
+.divmain{
+    text-decoration: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: rgb(27, 27, 27);
+    
+    align-items: center;
+    border: 2px #333 solid;
+    border-top: 5px red solid;
+    border-radius: 5px;
+
+}
+
+
+.esewa{
+    margin-left: 12%;
+    margin-right: 12%;
+    border: 1px rgb(0, 0, 0) solid;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    border-left: rgb(0, 255, 106) 5px solid;
+    border-right: rgb(0, 255, 106) 5px solid;
+}
+
+.esewa img{
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.streamersalert{    
+    margin-left: 12%;
+    margin-right: 12%;
+    border: 1px rgb(0, 0, 0) solid;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    border-left: rgb(0, 255, 106) 5px solid;
+    border-right: rgb(0, 255, 106) 5px solid;
+}
+
+.streamersalert img{
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.khalti{
+    margin-left: 12%;
+    margin-right: 12%;
+    border: 1px rgb(0, 0, 0) solid;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    border-left: rgb(0, 255, 106) 5px solid;
+    border-right: rgb(0, 255, 106) 5px solid;
+}
+
+.khalti img{
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+/*header start */
+.headerul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.headerli {
+    float: left;
+  }
+  
+.headerli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+ .headerli a:hover {
+    background-color: #111;
+  }
+/* header end*/
+
