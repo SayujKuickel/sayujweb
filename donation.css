@@ -48,24 +48,6 @@ a:link {
 }
 
 
-.esewa{
-    margin-left: 12%;
-    margin-right: 12%;
-    border: 1px rgb(0, 0, 0) solid;
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    border-radius: 10px;
-    border-left: rgb(0, 255, 106) 5px solid;
-    border-right: rgb(0, 255, 106) 5px solid;
-}
-
-.esewa img{
-    width: 50px;
-    margin-right: 20px;
-    margin-left: 5px;
-}
-
 .streamersalert{    
     margin-left: 12%;
     margin-right: 12%;
@@ -79,24 +61,6 @@ a:link {
 }
 
 .streamersalert img{
-    width: 50px;
-    margin-right: 20px;
-    margin-left: 5px;
-}
-
-.khalti{
-    margin-left: 12%;
-    margin-right: 12%;
-    border: 1px rgb(0, 0, 0) solid;
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    border-radius: 10px;
-    border-left: rgb(0, 255, 106) 5px solid;
-    border-right: rgb(0, 255, 106) 5px solid;
-}
-
-.khalti img{
     width: 50px;
     margin-right: 20px;
     margin-left: 5px;
