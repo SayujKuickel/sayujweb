@@ -31,6 +31,35 @@ a:active {
   text-decoration: none;
 }
 
+
+/*header start */
+.headerul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.headerli {
+  float: left;
+}
+
+.headerli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.headerli a:hover {
+  background-color: #111;
+}
+/* header end*/
+
+
 .Profileimg{
     border-radius: 50%;
     height: 120px;
@@ -41,48 +70,20 @@ a:active {
     justify-content: center;
 }
 
-.details {
-    background-color: #333;
-    border-left: red 5px solid;
-    border-right: red 5px solid;
-    border-radius: 10px;
-    margin-left: 6%;
-    margin-right: 6%;
-
+.about{
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.info{
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-
+.spanname{
+  color: aquamarine;
 }
 
-
-/*header start */
-.headerul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-.headerli {
-    float: left;
-  }
-  
-.headerli a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
- .headerli a:hover {
-    background-color: #111;
-  }
-/* header end*/
-
+.details{
+  margin-left: 10%;
+  border-left: 5px aquamarine solid;
+  border-radius: 1px;
+}
+.details p{
+  padding-left: 3px;
+}
