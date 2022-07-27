@@ -88,7 +88,6 @@ a:active {
   }
 /* header end*/
 
-
 .btn {
     background-color: rgb(255, 0, 0);
     border: none;
@@ -120,3 +119,46 @@ a:active {
   .btn1:hover {
     background-color: rgb(20, 72, 82);
   }
+
+
+  .line{
+    background-color: #333;
+    height: 1px;
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+  .video-iframe{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    left: 20%;
+    right: 10%;
+  }
+  .video-iframe iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+
+  }
+  .secdiv{
+    text-align: center;
+  
+  }
+
+ .videos img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+  }
+
+.smalltext{
+  font-size: 50%;
+}
