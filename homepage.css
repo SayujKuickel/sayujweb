@@ -128,35 +128,13 @@ a:active {
     margin-left: 10%;
     margin-right: 10%;
   }
-
-
-  .video-iframe{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
-    left: 20%;
-    right: 10%;
-  }
-  .video-iframe iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 60%;
-    height: 60%;
-
-  }
-  .secdiv{
-    text-align: center;
-  
-  }
-
  .videos img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 70%;
     text-align: center;
+    border-radius: 8px;
   }
 
 .smalltext{
