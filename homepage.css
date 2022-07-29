@@ -25,19 +25,19 @@ span{
 
 /* Visited link*/
 a:link {
-  color: rgb(138, 135, 135);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: rgb(255, 255, 255);
+  color: rgb(129, 129, 129);
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: white;
+  color: rgb(20, 126, 175);
   text-decoration: none;
   
 }
