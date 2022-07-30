@@ -86,3 +86,22 @@ a:link {
   margin-left: auto;
   margin-right: auto;
 }
+
+.donos{
+  background-color: #333;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-left: 12%;
+  margin-right: 12%;
+  border-right: aquamarine 5px solid;
+  border-left: aquamarine 5px solid;
+  outline: 1px #222 solid;
+}
+.donos h3{
+  background: #222;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-right: aquamarine 5px solid;
+  border-left: aquamarine 5px solid;
+  border-radius: 5px;
+}
