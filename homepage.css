@@ -1,26 +1,43 @@
 
 body{
-    margin: auto;
-    background-color: #181414;
-    color: white;
-    text-decoration: none;
-    font-family: 'Kanit', sans-serif;
-    font-size: 150%;
+  margin: auto;
+  background-color: #181414;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 150%;
 }
 
 span{
-    font-size: 60px;
-    font-family: 'The Nautigal', cursive;
+  font-size: 200%;
+  font-family: 'Mouse Memoirs', sans-serif;
+  color: gold;
+  outline: black 1px solid;
 }
 
 .Profileimg{
-    border-radius: 50%;
-    height: 120px;
-    width: 120px;
+  text-align: justify;
+  width: 120px;
+  padding-left:  10px;
+  padding-right: 10px;
 }
+
+.Profileimg img{
+  display: block;
+  margin: 0 auto;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
 .pfpdiv{
     display: flex;
     justify-content: center;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
 }
 
 /* Visited link*/
@@ -31,7 +48,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: rgb(129, 129, 129);
+  color: rgb(202, 202, 202);
   text-decoration: none;
 }
 
@@ -39,7 +56,6 @@ a:visited {
 a:hover {
   color: rgb(20, 126, 175);
   text-decoration: none;
-  
 }
 
 /* selected link */
@@ -56,10 +72,7 @@ a:active {
 .textcenter{
     text-align: center;
 }
-.textleft{
-    text-align: left;
-    margin-left: 20px;
-}
+
 
 /*header start */
 .headerul {
@@ -88,54 +101,37 @@ a:active {
   }
 /* header end*/
 
-.btn {
-    background-color: rgb(255, 0, 0);
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius:8px ;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: rgb(173, 0, 0);
-  }
+.btn1 {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius:8px ;
+}
 
-  .btn1 {
-    background-color: rgb(54, 203, 230);
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius:8px ;
-  }
-  
   /* Darker background on mouse-over */
   .btn1:hover {
-    background-color: rgb(20, 72, 82);
+    background-color: #740000;
   }
 
-
-  .line{
-    background-color: #333;
-    height: 1px;
-    border: none;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
- .videos img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    text-align: center;
-    border-radius: 8px;
-  }
+.line{
+  background-color: #333;
+  height: 1px;
+  border: none;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.videos img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+  border-radius: 8px;
+}
 
 .smalltext{
   font-size: 50%;
