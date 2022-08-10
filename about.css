@@ -1,0 +1,89 @@
+body{
+    margin: auto;
+    background-color: #181414;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 150%;
+}
+/* Visited link*/
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(61, 183, 231);
+  text-decoration: none;
+  
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+
+/*header start */
+.headerul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.headerli {
+  float: left;
+}
+
+.headerli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.headerli a:hover {
+  background-color: #111;
+}
+/* header end*/
+
+
+.Profileimg{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+.pfpdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.spanname{
+  color: aquamarine;
+}
+
+.details{
+  margin-left: 10%;
+  border-left: 5px aquamarine solid;
+  border-radius: 1px;
+}
+.details p{
+  padding-left: 3px;
+}
