@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+
+/* Visited link*/
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+  
+  /* visited link */
+a:visited {
+    color: #eff3f5;
+    text-decoration: none;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: #9c9c9c;
+    text-decoration: underline;
+    font-weight: 100;
+}
+  
+  /* selected link */
+a:active {
+    color: #63adba;
+    text-decoration: none;
+}
+
+
+/*header start */
+.headerul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #484444;
+    border-bottom: #5b5b5b 1px solid;
+  }
+  
+.headerli {
+    float: left;
+  }
+  
+.headerli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+ .headerli a:hover {
+    background-color: #302c2c;
+    border-radius: 4px;
+  }
+/* header end*/
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.bodydiv{
+    background-color: #1c1c1c;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1%;
+    border: #3b3b3b 2px solid;
+    border-radius: 5px;
+}
+
+.invdiv{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),linear-gradient(270deg,#F56040,#FD1D1D,#5B51D8,#405DE6);
+    margin-left: 5vw;
+    margin-right: 5vw;
+    /* height: 20vw; */
+    padding: 1%;
+    border: #3b3b3b 2px solid;
+    border-radius: 5px;
+    text-shadow: 0px 0px 6px black ;
+    text-decoration: none;
+
+}
+
+.invdiv a:hover{
+    text-decoration: none;
+    color: white;    
+}
+
+
+.profile{
+    padding-left:  10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;   
+}
+
+.profile img{
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 25%;
+    margin-right: 20px;
+    transition: 1s;
+}
+.profile img:hover{
+    transform: scale(1.040);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.innerdiv {
+    width: auto;
+}
+
+.title{
+    font-family: 'Silkscreen', cursive;
+    border-left: 2px #ffff00 solid;
+    border-radius: 1px;
+    font-size: 20px;
+}
+
+.subtitle{
+    font-family: 'Silkscreen', cursive;
+    border-left: 2px #00dddd solid;
+    border-radius: 1px;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.title p{
+    margin-left: 2px;
+}
+.description{
+    color: #Acacac;
+}
+
+.donations{
+    color: #Acacac;
+    border-left: 3px solid #ffff00;
+    margin-left: 12px;
+    border-radius: 3px;
+}
+.donations p{
+    margin-left: 3px;
+}
+
+
+
+
+
+/* column */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 75%;
+    /* padding: 10px; */
+  }
+  .column1 li{
+    list-style: none;
+  }
+  .column2 {
+    float: left;
+    width: 25%;
+    border-left: #405DE6 3px solid;
+    /* padding: 10px; */
+  }
+  .column2 li{
+    list-style: none;
+    translate: -30px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column1 {
+    width: 100%;
+    }
+    .column2 {
+      width: 100%;
+      border-left: 0px;
+      translate: 30px;
+    }
+  }
+/* column end */
+
+.li-discord a:hover{
+    color:#5865F2;
+}
+.li-hand-holding-dollar a:hover{
+    color: #85bb65;
+}
+.li-facebook a:hover{
+    color: #3b5998 ;
+}
+.li-instagram a:hover{
+    background-image: linear-gradient(30deg, #feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5 );
+    text-decoration: underline;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.li-tiktok a:hover{
+    background-image: linear-gradient(30deg,#ff0050 50%,#00f2ea 100%);
+    text-decoration: underline;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.li-twitter a:hover{
+    color:#00acee ;
+}
+.li-youtube a:hover{
+    color:#FF0000;
+}
+
+
+
+
+
+footer{
+  background-color: #464545;
+  border-top: #5b5b5b 1px solid;
+  text-align: center;
+  margin: 0;
+}
+
+/* footer column */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.footer-clm1 {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 10px;
+}
+.footer-clm1 .footer-socials{
+  padding-left: 40%;
+
+}
+
+.footer-clm2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  font-size: 200%;
+}
+
+/* Clear floats after the columns */
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .footer-clm1 {
+  width: 100%;
+  }
+  .footer-clm2 {
+    width: 100%;
+  }
+}
+
+/* column end */
