@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+.dark,
+:root{
+  --white: #eff3f5;
+  --black: #0B090B;
+  --title-border: #ffff00; /* border left*/
+  --skyblue: #00dddd;
+  --darkblue: #405DE6;
+  
+  --darkgray: #212427;
+  --lightgray: #FFFFFF;
+  --shadow: 0px 0px 6px black; 
+
+  --blue1: #3b5998; /*facebook*/
+  --blue2: #00acee; /* discord */
+  --green: #85bb65; /*money*/
+  --burple: #5865F2; /*discord*/
+  --insta: linear-gradient(30deg, #feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); 
+  --tiktok: linear-gradient(30deg,#ff0050 50%,#00f2ea 100%);
+  --gradient: linear-gradient(25deg, #29297e, #2d439a, #2d5eb6, #2779d4);
+  --youtube: #FF0000;
+
+  --flexbg: #2b2a2a;
+  --imagebg: #000000;
+  
+  --title: #ffffff;
+  --text: #Acacac;
+  --background: #000000;
+  --sectionbg: #1c1c1c;
+  --headerbg: #484444;
+  --border: #5b5b5b;
+  --headerhover: #302c2c;
+
+  --link: #ffffff;
+  --link-visited: #eff3f5;
+  --link-hover: #9c9c9c;
+  --link-active: #63adba;
+
+  --icons: #eff3f5;
+}
+
+.light, 
+:root:has(#light:checked){
+  --sectionbg: #ffffff;
+  --text: #242424;
+  --background: #e6e7e9;
+  --headerbg: #818181;  
+  --border: #cecece;
+  --headerhover: #302c2c;
+  --title: black;
+  --icons: #05141b;
+
+  --title-border: #63adba;
+  --shadow: #; 
+  
+  --link: #000000;
+  --link-visited: #242424;
+  --link-hover: rgb(49, 49, 49);
+  --link-active: #63adba;
+
+  --gradient: linear-gradient(25deg, #7c9ce1, #6fbde6, #57deea, #08ffee);
+  --flexbg:#e8e4ec ;
+  --imagebg: #ffffff;
+}
+
+a:link {
+  color: var(--link);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:visited {
+  color: var(--link-visited);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  font-weight: 100;
+}
+a:active {
+  color: var(--link-active);
+  text-decoration: none;
+}
+
+body{
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.navbar{
+  height: 50px;
+  width: 100%;
+  background: var(--headerbg);
+  color:var(--white);
+  border-bottom: var(--border) 3px solid;
+}
+.navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar > a:hover {
+  color: var(--headerhover);
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.navbar-li a:hover{
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+}
+.navbar-li input[type="radio"]{
+  appearance: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  outline: 3px solid var(--radio-color,wheat);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+input[type="radio"]#light{
+  --radio-color: var(--lightgray);
+}
+input[type="radio"]#dark{
+  --radio-color: var(--darkgray);
+}
+input[type="radio"]#light:checked{
+  background: var(--lightgray);
+}
+input[type="radio"]#dark:checked{
+  background: var(--darkgray);
+}
+
+.fa-brands, .fa-solid{
+  color: var(--icons);
+}
+
+.bodydiv{
+  background-color: var(--sectionbg);
+  margin-left: 3vw;
+  margin-right: 3vw;
+  padding: 1%;
+  border: var(--border) 2px solid;
+  border-radius: 5px;
+}
+.flexdiv{
+  padding: 5px;
+}
+.flexmain{
+  padding: .05%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex{
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  background-color: var(--flexbg);
+  border: --border 1px solid;
+  border-radius: 3px;
+  padding: 5px;
+  
+}
+.flex img{
+  background-color: var(--imagebg);
+  transition: .5s;
+}
+
+.flex img:hover{
+  transform: scale(1.040);
+}
+.headtxt{
+  margin: 0px;
+  text-align: center;
+}
+.bottomtxt{
+  margin: 0;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/*Flex end*/
+
+.innerdiv {
+  width: auto;
+}
+
+.title{
+  font-family: 'Silkscreen', cursive;
+  border-left: 2px var(--title-border) solid;
+  border-radius: 1px;
+  font-size: 20px;
+  color: var(--title);
+}
+
+.subtitle{
+  font-family: 'Silkscreen', cursive;
+  border-left: 2px var(--blue2) solid;
+  border-radius: 1px;
+  font-size: 18px;
+  margin-left: 12px;
+  color: var(--title);
+}
+
+.title p{
+  margin-left: 2px;
+}
+.description{
+  color: var(--text);
+}
+
+
+footer{
+  background-color: var(--headerbg);
+  border-top: --border 1px solid;
+  text-align: center;
+  margin: 0;
+}
+
+/* footer column */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.footer-clm1 {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 10px;
+}
+.footer-clm1 .footer-socials{
+  padding-left: 5vw;
+
+}
+.footer-clm2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  font-size: 200%;
+}
+
+/* Clear floats after the columns */
+.footer-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .footer-clm1 {
+  width: 100%;
+  }
+  .footer-clm2 {
+    width: 100%;
+  }
+}
+
+/* column end */
