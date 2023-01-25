@@ -1,0 +1,58 @@
+:root {
+  --color-youtube: #ff0000;
+  --color-facebook: #4267b2;
+  --color-discord: #5865f2;
+  --color-tiktok: linear-gradient(66deg, #00f2ea, #ff0050);
+}
+.footer {
+  background-color: var(--color-header-background);
+  margin-top: var(--size-2000);
+  padding: var(--size-20);
+}
+.footer-text-center {
+  text-align: center;
+}
+.footer-container {
+  margin: var(--size-400) var(--size-200);
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: var(--size-50);
+}
+@media screen and (max-width: 750px) {
+  .footer-container {
+    grid-template-columns: repeat(1, 100%);
+    padding: var(--size-50);
+  }
+  .footer-items:nth-child(2) {
+    text-align: center;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  gap: var(--size-50);
+}
+
+.social-icons {
+  padding: var(--size-50);
+  background: var(--color-section);
+  font-size: var(--size-100);
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+.social-icons a {
+  color: var(--color-text);
+}
+
+.icon-discord:hover {
+  background-color: var(--color-discord);
+}
+.icon-youtube:hover {
+  background-color: var(--color-youtube);
+}
+.icon-facebook:hover {
+  background-color: var(--color-facebook);
+}
+.icon-tiktok:hover {
+  background: var(--color-tiktok);
+}

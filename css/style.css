@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+:root {
+  --size-10: 0.1rem;
+  --size-20: 0.2rem;
+  --size-30: 0.3rem;
+  --size-40: 0.4rem;
+  --size-50: 0.5rem;
+  --size-60: 0.6rem;
+  --size-70: 0.7rem;
+  --size-80: 0.8rem;
+  --size-90: 0.9rem;
+  --size-100: 1rem;
+  --size-150: 1.5rem;
+  --size-200: 2rem;
+  --size-300: 3rem;
+  --size-400: 4rem;
+  --size-500: 5rem;
+  --size-600: 6rem;
+  --size-700: 7rem;
+  --size-800: 8rem;
+  --size-900: 9rem;
+  --size-1000: 10rem;
+  --size-1500: 15rem;
+  --size-2000: 20rem;
+}
+
+:root {
+  --color-background-color: #0c0c0c;
+  --color-header-background: #555555;
+  --color-header-hover: #484848;
+  --color-section: #171717;
+  --color-border: #5b5b5b;
+  --color-input-background: hsla(180, 1%, 28%, 0.5);
+
+  --color-button: #0d5676;
+  --color-button-hover: #226c89;
+
+  --color-text: hsla(200, 23%, 95%);
+  --color-description: hsla(200, 23%, 95%, 0.75);
+}
+:root:has(#dark-mode-toggle:checked) {
+  --color-background-color: #eff3f5;
+  --color-header-background: #c4c4c4;
+  --color-header-hover: #d1d1d1;
+  --color-section: #bfc2c44d;
+
+  --color-button: #0d5676;
+  --color-button-hover: #226c89;
+
+  --color-text: #1a1a1a;
+  --color-description: hsla(0, 0%, 10%, 0.8);
+}
+
+#dark-mode-toggle {
+  display: none;
+}
+#unchecked-icon,
+#checked-icon {
+  width: var(--size-150);
+}
+/* ========== links */
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* =============== utilty class */
+.title {
+  font-size: var(--size-200);
+  font-family: "Silkscreen", cursive;
+  color: var(--color-text);
+}
+.fontawesome-style {
+  opacity: 0;
+}
+.title-small {
+  font-size: var(--size-150);
+  font-family: "Silkscreen", cursive;
+}
+
+/* .title:hover .fontawesome-style {
+  opacity: 0.25;
+  padding-right: -2rem;
+}
+.title-small:hover .fontawesome-style {
+  font-size: var(--size-150);
+  font-family: "Silkscreen", cursive;
+} */
+.desc {
+  color: var(--color-description);
+}
+.gap {
+  margin: 0 var(--size-100);
+}
+.small-text {
+  font-size: var(--size-50);
+}
+.color-reset {
+  color: var(--color-text);
+}
+
+.list li::marker {
+  color: var(--color-button);
+}
+
+#dark-mode-toggle {
+  background: green;
+}
+
+/* CSS for default state */
+#dark-mode-toggle {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  width: 20px;
+  height: 20px;
+  background: url(../images/svg-icons/sun-solid.svg);
+}
+
+/* CSS for checked state */
+#dark-mode-toggle:checked {
+  appearance: none;
+  background: url(../images/svg-icons/moon-solid.svg) no-repeat;
+}
+
+/* =========== */
+
+body {
+  background-color: var(--color-background-color);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+  font-size: var(--size-100);
+}
+.content {
+  margin: var(--size-100);
+  padding: var(--size-100);
+  background-color: var(--color-section);
+  border-radius: var(--size-100);
+  border: 2px solid var(--color-border);
+}
+
+.channel-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: var(--size-50);
+}
+
+.channels img {
+  width: var(--size-2000);
+  overflow: hidden;
+}
+.channels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 750px) {
+  .channel-container {
+    grid-template-columns: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.channels-img-container {
+  overflow: hidden;
+}
+
+/* ======== channel info */
+.channel-info-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (max-width: 750px) {
+  .channel-info-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+/* -------------- Contact Us page */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  resize: vertical;
+  background: var(--color-input-background);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: var(--color-button);
+  color: var(--color-text);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-button-hover);
+}
+
+.form-container {
+  border-radius: var(--size-100);
+  background-color: var(--color-section);
+  padding: var(--size-200);
+  border: 2px solid var(--color-border);
+  margin: var(--size-200);
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: var(--size-50);
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: var(--size-50);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* =============== inventory  */
+
+.inventory-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-100);
+  flex: 50px;
+  margin: var(--size-100) 0;
+}
+.container-item {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-background-color);
+  border: 2px solid var(--color-border);
+  border-radius: var(--size-100);
+
+  word-wrap: break-word;
+  width: var(--size-800);
+  text-align: center;
+}
+.container-image {
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+.container-image img {
+  border-top-left-radius: var(--size-100);
+  border-top-right-radius: var(--size-100);
+  width: var(--size-800);
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.container-image img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0.5);
+}
+.container-text {
+  margin: var(--size-50);
+}
+.container-text span {
+  font-size: var(--size-100);
+}

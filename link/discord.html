@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <link rel="icon" href="../images/logo.png" />
+
+    <script src="../js/theme-switcher.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6c293dea87.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script>
+      setTimeout(triggerLink(), 2000);
+      function triggerLink() {
+        location = "https://discord.com/invite/Zmc6ZSuHAV";
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a href="../index.html">Home</a>
+        <a href="../inventory.html">Inventory</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+      <div class="header-right">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <label for="dark-mode-toggle">
+          <img
+            src="../images/svg-icons/white-sun-solid.svg"
+            id="unchecked-icon"
+          />
+          <img
+            src="../images/svg-icons/white-moon-solid.svg"
+            id="checked-icon"
+            style="display: none"
+          />
+        </label>
+      </div>
+    </header>
+    <main>
+      <style>
+        .text-container {
+          text-align: center;
+          margin: var(--size-100);
+          font-family: "Silkscreen", cursive;
+          font-size: var(--size-200);
+        }
+        .link {
+          color: skyblue;
+          font-weight: bold;
+        }
+      </style>
+      <div class="text-container">
+        You're being redirected to my Discord Server if you don't get redirected
+        automatically please
+        <a href="https://discord.com/invite/Zmc6ZSuHAV" class="link"
+          >click me</a
+        >
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-text-center">
+        <span class="title-small">Thankyou for visiting</span>
+      </div>
+      <div class="footer-container">
+        <div class="footer-items">
+          <div class="footer-socials">
+            <div class="social-icons icon-discord">
+              <a href="https://discord.com/invite/Zmc6ZSuHAV"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </div>
+            <div class="social-icons icon-youtube">
+              <a href="https://youtube.com/@sayuj"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <div class="social-icons icon-facebook">
+              <a href="https://facebook.com/sayujyt"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+            <div class="social-icons icon-tiktok">
+              <a href="https://tiktok.com/@sayujyt"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-items">
+          Feel free to <a href="./contact.html">Contact me</a> if you have a
+          video idea or anything in general you'd like for me to hear.
+          <br />
+          you can also message me on my <a href="">discord server</a>.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
