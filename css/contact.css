@@ -1,0 +1,97 @@
+.sticky {
+  position: absolute;
+}
+
+.contact-main-body {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: auto;
+  margin-top: 50px;
+}
+.contact-left,
+.contact-right {
+  display: grid;
+  place-items: center;
+}
+.contact-left {
+  width: 100%;
+}
+.form-body {
+  padding: var(--size-200) var(--size-500);
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background-5);
+  gap: var(--size-50);
+  align-items: center;
+}
+.form-body input[type="text"],
+input[type="email"],
+textarea {
+  width: var(--size-2000);
+  border: 0;
+  outline: 0;
+  padding: var(--size-50);
+  border-radius: var(--size-50);
+  background: var(--color-background-15);
+  color: var(--color-on-surface);
+  border: 1px solid var(--color-border-1);
+
+  box-shadow: var(--elevation-3);
+
+  transition: all 100ms ease-in-out;
+}
+.form-body input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 1px solid var(--color-border-2);
+}
+.form-body input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: var(--color-on-surface);
+}
+
+.form-body button {
+  outline: 0;
+  border: 0;
+  border-radius: var(--size-50);
+
+  background: var(--color-blue-800);
+  width: var(--size-1500);
+  padding: var(--size-50);
+  color: var(--color-on-surface);
+  /* box-shadow: var(--elevation-1); */
+
+  transition: color 200ms ease-in-out, background 100ms ease-in-out,
+    font-weight 1s ease-in-out;
+}
+.form-body button:hover {
+  background: var(--color-blue-700);
+  box-shadow: var(--elevation-2);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    margin: 0;
+    padding: var(--size-50);
+  }
+  .contact-main-body,
+  .navbar {
+    grid-template-columns: repeat(1, 100%);
+    height: auto;
+  }
+  .main-title {
+    font-size: 50px;
+  }
+  .form-body {
+    padding: var(--size-50);
+    margin: var(--size-50);
+  }
+  .nav-right {
+    display: none;
+  }
+  .contact-right {
+    grid-row: 1/2;
+  }
+}
