@@ -730,25 +730,18 @@ footer .description {
 
 /*                <form>                 */
 form {
-  min-width: 50vw;
-  width: fit-content;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: var(--color-background-5);
-  padding: var(--size-100) var(--size-200);
-  box-shadow: var(--elevation-3);
-  gap: var(--size-100);
-  border-radius: var(--size-100);
-}
-.row {
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
   justify-content: center;
-}
-.row .description {
-  opacity: 50%;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  gap: var(--size-100);
+  background: var(--color-background-12);
+  padding: var(--size-100) var(--size-600);
+  width: fit-content;
+  border-radius: var(--size-100);
+  box-shadow: var(--elevation-1);
 }
 input[type="text"],
 input[type="email"],
@@ -765,20 +758,18 @@ input[type="email"]:hover,
 textarea:hover {
   border: 1px solid var(--color-border-2);
 }
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: 1px solid var(--color-accent-1);
   box-shadow: var(--elevation-2);
 }
-
 ::placeholder {
   color: var(--color-on-background);
   opacity: 50%;
 }
-.btn-row button {
-  font-family: "silkscreen", cursive;
+button {
+  font-family: silkscreen, cursive;
   color: white;
   text-shadow: 2px 2px 5px #000000;
   cursor: pointer;
@@ -790,29 +781,15 @@ textarea:focus {
   border-radius: var(--size-50);
   width: var(--size-1500);
 }
-.btn-row button:hover {
+button:hover {
   background: var(--color-submit-button-hover);
 }
-.btn-row button:focus {
+button:focus {
   border-bottom: 5px solid transparent;
   transform: translateY(5px);
   box-shadow: none;
 }
-@media screen and (max-width: 750px) {
-  form {
-    padding: var(--size-100);
-    font-size: var(--body-text-small);
-    gap: var(--size-50);
-  }
-  .row {
-    grid-template-columns: 1fr;
-  }
 
-  input[type="text"],
-  textarea {
-    width: var(--size-1500);
-  }
-}
 /*                </form>                 */
 
 /*                <inventory>                */
