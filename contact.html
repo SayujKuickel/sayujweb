@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" href="./image/logo.png" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="./js/dark-mode-toggle.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="./inventory.html">Inventory</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="https://youtube.com/@sayuj" target="_blank"
+              ><button class="sub-button">SUBSCRIBE</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <form
+        method="POST"
+        action="https://formsubmit.co/edcdf8e949e86a87f4e2cce1c7d32704"
+      >
+        <h1 class="mc-font title-text-large">Contact Me!</h1>
+        <div class="row">
+          <p class="description">First Name</p>
+          <input
+            type="text"
+            name="First-name"
+            placeholder="Enter First Name"
+            required
+          />
+        </div>
+        <div class="row">
+          <p class="description">Last Name</p>
+          <input
+            type="text"
+            name="Last-name"
+            placeholder="Enter Last Name"
+            required
+          />
+        </div>
+        <div class="row">
+          <p class="description">Email</p>
+          <input
+            type="email"
+            name="Email"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+        <div class="row">
+          <p class="description">Comment</p>
+          <textarea
+            rows="5"
+            name="Comment"
+            placeholder="Enter your Comment"
+            style="resize: none"
+            required
+          ></textarea>
+        </div>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://sayuj.com.np/thankyou.html"
+        />
+
+        <div class="btn-row">
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section section-left">
+          <nav class="dark-mode-toggle">
+            <p class="info description">
+              May not work on some browsers due to lack of browser support
+            </p>
+            <p class="lable-text-small mc-font">TOGGLE THEME</p>
+            <input
+              type="checkbox"
+              id="dark-mode-toggle"
+              onclick="toggleDarkMode()"
+            />
+            <label for="dark-mode-toggle">Toggle</label>
+          </nav>
+        </div>
+        <div class="footer-section section-right">
+          <p class="label-text-meidum mc-font">Sitemap</p>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./inventory.html">Inventory</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="description body-text-small">
+        <a href="./privacy.html">&#169; Sayuj Kuickel 2023</a>
+      </p>
+    </footer>
+  </body>
+</html>
