@@ -414,7 +414,7 @@ section {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: var(--size-20);
+  gap: var(--size-50);
 }
 
 .nav-left a {
@@ -904,5 +904,4 @@ form button:focus {
     margin: 0 var(--size-50);
   }
 }
-
 /*                </inventory>                */
