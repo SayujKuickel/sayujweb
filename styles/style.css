@@ -768,7 +768,7 @@ textarea:focus {
   color: var(--color-on-background);
   opacity: 50%;
 }
-button {
+form button {
   font-family: silkscreen, cursive;
   color: white;
   text-shadow: 2px 2px 5px #000000;
@@ -781,15 +781,27 @@ button {
   border-radius: var(--size-50);
   width: var(--size-1500);
 }
-button:hover {
+form button:hover {
   background: var(--color-submit-button-hover);
 }
-button:focus {
+form button:focus {
   border-bottom: 5px solid transparent;
   transform: translateY(5px);
   box-shadow: none;
 }
-
+@media screen and (max-width: 750px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: auto;
+  }
+  form {
+    padding: var(--size-50) var(--size-200);
+  }
+  form button {
+    width: auto;
+  }
+}
 /*                </form>                 */
 
 /*                <inventory>                */
