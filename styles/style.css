@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 :root {
   --color-background-1: #1c1b1f;
   --color-background-5: linear-gradient(
@@ -375,7 +375,6 @@ header {
 .main-title:hover ~ .foreground {
   transform: scale(1.1);
 }
-
 section {
   background: var(--color-background-1);
   color: var(--color-on-background);
@@ -407,7 +406,7 @@ section {
   grid-template-columns: repeat(2, 50%);
   box-shadow: var(--elevation-3);
   margin-bottom: var(--size-100);
-  padding: 0 9vw;
+  padding: 0 10%;
 }
 .nav-bar ul {
   margin: 0;
@@ -438,7 +437,7 @@ section {
 }
 @media screen and (max-width: 750px) {
   .nav-bar {
-    padding: 0 2vw;
+    padding: 0 5%;
   }
   .sub-button {
     font-size: var(--label-text-small);
@@ -448,13 +447,13 @@ section {
 
 /*          <body-style>           */
 .body-content {
-  width: 75vw;
+  width: 80%;
   margin: auto;
 }
 
 @media screen and (max-width: 750px) {
   .body-content {
-    width: 90vw;
+    width: 90%;
   }
 }
 
@@ -768,6 +767,10 @@ textarea:focus {
   color: var(--color-on-background);
   opacity: 50%;
 }
+.contact-me {
+  width: 90%;
+  padding: var(--size-50);
+}
 form button {
   font-family: silkscreen, cursive;
   color: white;
@@ -793,10 +796,12 @@ form button:focus {
   input[type="text"],
   input[type="email"],
   textarea {
-    width: auto;
+    width: 90%;
   }
   form {
     padding: var(--size-50) var(--size-200);
+    width: auto;
+    margin: 0 10%;
   }
   form button {
     width: auto;
@@ -904,4 +909,13 @@ form button:focus {
     margin: 0 var(--size-50);
   }
 }
+@media screen and (max-width: 450px) {
+  .sub-button {
+    display: none;
+  }
+  .nav-bar {
+    padding: var(--size-100) 0;
+  }
+}
+
 /*                </inventory>                */
