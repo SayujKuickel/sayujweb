@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "minecraftTen";
+  src: url("../font/minecraft-ten.ttf") format("truetype"),
+    url("../font/minecraft-ten.woff2") format("woff2");
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: "minecraftFiveBold";
+  src: url("../font/minecraft-five-bold.ttf") format("truetype"),
+    url("../font/minecraft-five-bold.woff2") format("woff2");
+  font-weight: normal;
+  font-size: normal;
+}
