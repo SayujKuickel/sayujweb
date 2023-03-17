@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 :root {
   --color-background-1: #1c1b1f;
   --color-background-5: linear-gradient(
@@ -254,6 +251,32 @@ select {
   background-color: var(--color-sel-bg);
   opacity: 100%;
 }
+
+#link {
+  /* color: var(--color-accent-1); */
+  /* font-weight: bolder; */
+  position: relative;
+}
+#link::after {
+  content: "";
+  position: absolute;
+  bottom: 0.1em;
+  left: 0;
+  height: 0.1em;
+  width: 0%;
+  background: var(--color-accent-1);
+
+  transition: 0.25s ease-in-out;
+}
+#link:hover::after {
+  width: 100%;
+}
+
+a {
+  color: var(--color-on-background);
+  text-decoration: none;
+}
+
 .title-text-large {
   font-size: 26px;
 }
@@ -296,16 +319,9 @@ select {
   font-family: "Silkscreen", cursive;
 }
 .description {
-  opacity: 80%;
+  color: rgb(182, 182, 182);
 }
-a {
-  color: var(--color-on-background);
-  text-decoration: none;
-  transition: 150ms ease-in-out;
-}
-a:hover {
-  color: var(--color-accent-1);
-}
+
 .sub-button {
   border: 0;
   outline: 0;
@@ -937,7 +953,7 @@ form button:focus {
 
 /*                <my-channel-section>                 */
 .my-channel-section {
-  background-image: linear-gradient(25deg, #831ced, #765ff3, #5d8af9, #0cb1ff);
+  background-image: linear-gradient(25deg, #0a18b3, #850281, #b50050, #da0019);
   padding: var(--size-100);
   display: grid;
   place-items: center;
@@ -945,7 +961,7 @@ form button:focus {
   color: var(--color-light);
   box-shadow: var(--elevation-4);
   background-size: 600% 600%;
-  background-position: 0% 100%;
+  background-position: 20% 100%;
 }
 
 .my-channel-section img {
@@ -989,16 +1005,16 @@ form button:focus {
 
 .my-channel-section:hover {
   animation-name: mygradient;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 @keyframes mygradient {
   50% {
-    background-position: 100% 0;
+    background-position: 80% 0;
   }
   100% {
-    background-position: 0 100%;
+    background-position: 20% 100%;
   }
 }
 @media screen and (min-width: 750px) {
