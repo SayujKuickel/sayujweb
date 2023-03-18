@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submitted</title>
+
+    <link rel="icon" href="./image/logo.png" />
+
+    <link rel="stylesheet" href="./style/font-faces.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="./js/dark-mode-toggle.js" defer></script>
+
+    <style>
+      main {
+        width: 90vw;
+        height: 100vh;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        /* place-items: center; */
+      }
+
+      .navbar {
+        position: absolute;
+        top: 0;
+      }
+      footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="#">Inventory</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <button
+              class="sub-button"
+              onClick='window.location="https://youtube.com/@sayuj"'
+            >
+              SUBSCRIBE
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <h1 class="mc-font">Message Successfully Sent!</h1>
+      <p>
+        <button
+          class="sub-button"
+          style="background: #800000"
+          onclick="window.location='index.html'"
+        >
+          Goto Homepage
+        </button>
+      </p>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section section-left">
+          <nav class="dark-mode-toggle">
+            <p class="info description">
+              May not work on some browsers due to lack of browser support
+            </p>
+            <p class="lable-text-small mc-font">TOGGLE THEME</p>
+            <input
+              type="checkbox"
+              id="dark-mode-toggle"
+              onclick="toggleDarkMode()"
+            />
+            <label for="dark-mode-toggle">Toggle</label>
+          </nav>
+        </div>
+        <div class="footer-section section-right">
+          <p class="label-text-meidum mc-font">Sitemap</p>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./inventory.html">Inventory</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="description body-text-small">
+        <a href="./privacy.html">&#169; Sayuj Kuickel 2023</a>
+      </p>
+    </footer>
+  </body>
+</html>

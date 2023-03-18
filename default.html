@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayuj</title>
+
+    <link rel="icon" href="./image/logo.png" />
+    <link rel="stylesheet" href="./style/font-faces.css" />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./js/dark-mode-toggle.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Inventory</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>
+            <a href="https://youtube.com/@sayuj" target="_blank"
+              ><button class="sub-button">SUBSCRIBE</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <footer>
+      <nav class="dark-mode-toggle">
+        <p class="info description">
+          May not work on some browsers due to lack of browser support
+        </p>
+
+        <p class="lable-text-small mc-font">TOGGLE THEME</p>
+        <input
+          type="checkbox"
+          id="dark-mode-toggle"
+          onclick="toggleDarkMode()"
+        />
+        <label for="dark-mode-toggle">Toggle</label>
+      </nav>
+    </footer>
+  </body>
+</html>
