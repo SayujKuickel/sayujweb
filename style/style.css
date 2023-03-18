@@ -939,6 +939,7 @@ form button:focus {
 .social-icons {
   display: flex;
   margin: var(--size-100) 0;
+  font-size: var(--title-text-large);
 }
 .social-icons a {
   padding: var(--size-80);
@@ -988,7 +989,7 @@ form button:focus {
   .social-icons {
     position: absolute;
     right: 0;
-    bottom: -30px;
+    bottom: -25px;
   }
 }
 /*            </my-channel-section>                 */
