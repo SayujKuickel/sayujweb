@@ -928,7 +928,7 @@ form button:focus {
 }
 .social-icons {
   display: flex;
-  font-size: var(--size-200);
+  font-size: var(--title-text-large);
   margin: var(--size-100) 0;
 }
 .social-icons a {
@@ -939,7 +939,9 @@ form button:focus {
   background: rgba(0, 0, 0, 0.2);
   color: white;
 }
-
+.description-container .title-text-large {
+  font-size: var(--size-200);
+}
 .my-channel-section:hover {
   animation-name: mygradient;
   animation-duration: 20s;
@@ -975,14 +977,12 @@ form button:focus {
     margin-right: 100px;
     opacity: 100%;
   }
-  .description-container .title-text-large {
-    font-size: var(--size-200);
-  }
+
   .social-icons {
     position: absolute;
     right: 0;
-    bottom: 0;
-    font-size: var(--title-text-medium);
+    bottom: -30px;
+    font-size: var(--title-text-large);
   }
 }
 /*            </my-channel-section>                 */
@@ -990,10 +990,11 @@ form button:focus {
 /*          <featured-videos>        */
 .featured-video-container {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--size-50);
 }
 .featured-video {
-  margin: var(--size-50);
+  /* margin: var(--size-50); */
   padding: var(--size-50);
 
   border: 1px solid var(--color-border-1);
@@ -1018,6 +1019,13 @@ form button:focus {
 }
 .video-description-container .description {
   font-size: var(--body-text-medium);
+}
+@media screen and (max-width: 750px) {
+  .featured-video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--size-50);
+  }
 }
 @media screen and (max-width: 450px) {
   .featured-video-container {
