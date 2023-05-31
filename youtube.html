@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube - Sayuj</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <script src="./javascript/inventory-image.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="fancy-link">Home</a>
+      <a href="./contact.html" class="fancy-link">Contact</a>
+      <a href="./about.html" class="fancy-link">About</a>
+      <a href="#" class="fancy-link">YouTube</a>
+    </header>
+
+    <section class="width">
+      <h2>My Videos!</h2>
+      These are some of my handpicked videos that i think might intrest You.
+      <div class="_video-wrapper">
+        <div class="_video-item featured">
+          <a
+            href="https://www.youtube.com/playlist?list=PLjKPrKuEWg0vjQHyTV938RZJNh0VtsUUL"
+            target="_blank"
+          >
+            <div class="_img-container">
+              <img
+                src="https://i.ytimg.com/vi/suL3kylXLs0/hq720.jpg?sqp=-…j0AgKJDeAE=&rs=AOn4CLDEH_wxQiiAO1WxWkfQYpw4F365ZQ"
+                alt="thumbnail"
+              />
+            </div>
+          </a>
+          <div class="_decription-container">
+            <h3>Minecraft But i Only Have One Chunk</h3>
+            One Chunk is a minecraft gamemode where i survive in one chunk. This
+            gamemode was introduced by
+            <a href="https://www.youtube.com/@WadZee" class="fancy-link"
+              >@WadZee</a
+            >
+            and i had a lot of fun playing it!
+          </div>
+        </div>
+
+        <div class="_video-item video_1">
+          <a href="https://www.youtube.com/watch?v=5oInqJbPjkw" target="_blank">
+            <div class="_img-container">
+              <img
+                src="https://i.ytimg.com/vi/5oInqJbPjkw/hq720.jpg?sqp=-…j0AgKJDeAE=&rs=AOn4CLCZQ8WjMtvbVmQvbm36QCjL1iyktw"
+                alt="thumbnail"
+              />
+            </div>
+          </a>
+          <div class="_decription-container">
+            <h3>Top Nepali Minecraft Servers</h3>
+            In this video i showcased some of the top minecraft servers in
+            nepal.
+            <ol>
+              <li>
+                <a href="https://discord.gg/PJeDw8zwjm" target="_blank">
+                  Azerith Network
+                </a>
+              </li>
+              <li>
+                <a href="https://discord.gg/AyP6XHJcz2" target="_blank">
+                  The Best Nepal
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="_video-item video_2">
+          <a
+            href="https://www.youtube.com/watch?v=hO99AKUQfg4&feature=youtu.be"
+            target="_blank"
+          >
+            <div class="_img-container">
+              <img
+                src="https://i.ytimg.com/vi/hO99AKUQfg4/hq720.jpg?sqp=-…j0AgKJDeAE=&rs=AOn4CLAOGkUirB7IC9AFI3HUvIZTnDCqlA"
+                alt="thumbnail"
+              />
+            </div>
+          </a>
+
+          <div class="_decription-container">
+            <h3>One Block Survival With Friends</h3>
+
+            Classic One block Survival with
+            <a
+              class="fancy-link"
+              target="_blank"
+              href="https://www.youtube.com/@NIshantSAMAOfficial"
+            >
+              @NishantSAMA </a
+            >,
+            <a
+              class="fancy-link"
+              target="_blank"
+              href="https://www.youtube.com/@Awpain"
+            >
+              @Awpain
+            </a>
+            and TheEliteHat.
+          </div>
+        </div>
+      </div>
+
+      <div class="see-more">
+        <button class="learn-more-btn">
+          <a href="https://youtube.com/@sayuj" target="_blank">See more!</a>
+        </button>
+      </div>
+    </section>
+
+    <section class="width">
+      <h2 id="inventory">My Inventory!</h2>
+      All of my resources, Skins, texture packs, and mods i use at one place!
+
+      <div class="_inventory-wrapper">
+        <div class="_options-container">
+          <div class="_select-btn">
+            <span class="select-text">Select the skin You want!</span>
+            <label class="select">
+              <select
+                id="selection-menu"
+                class="select-button"
+                onchange="changeImage()"
+              >
+                <option value="./inventory/sayuj.png">Sayuj</option>
+                <option value="./inventory/visal.png">Visal</option>
+                <option value="./inventory/Crystallinearc.png">
+                  Crystallinearc
+                </option>
+                <option value="./inventory/sakshyam.png">sakshyam</option>
+                <option value="./inventory/TheEliteHat.png">TheEliteHat</option>
+                <option value="./inventory/omen.png">Omen</option>
+              </select>
+            </label>
+          </div>
+
+          <a id="download-link" href="" download>
+            <button id="download-button" class="button">Download</button>
+          </a>
+        </div>
+        <div class="_image-main-container">
+          <div class="_image-container">
+            <img id="image" src="" alt="Selected Image" />
+          </div>
+        </div>
+      </div>
+
+      <h2>Mods and Packs</h2>
+      <ul>
+        <span class="list-label"> Packs </span>
+        <li>
+          <a
+            href="https://www.curseforge.com/minecraft/texture-packs/default-dark-mode"
+            target="_blank"
+          >
+            Default Dark Mode
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.curseforge.com/minecraft/texture-packs/bb"
+            target="_blank"
+          >
+            Bare Bones
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.curseforge.com/minecraft/texture-packs/fresh-animations"
+            target="_blank"
+          >
+            Fresh Animations
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://pvprp.com/pack?p=1657recommendedlike&amp;or=rec"
+            target="_blank"
+          >
+            Chillfault <span style="font-size: xx-small">1.8.9 (pvp)</span>
+          </a>
+        </li>
+        <span class="list-label"> Mods </span>
+        <li>
+          <a href="https://www.curseforge.com/minecraft/mc-mods/sodium">
+            Sodium
+          </a>
+        </li>
+        <li><a href="https://www.replaymod.com">Replay mod</a></li>
+        <li>
+          <a href="https://www.curseforge.com/minecraft/mc-mods/irisshaders">
+            Iris
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="footer-content width">
+        sitemap
+        <ul>
+          <li><a href="./index.html">Homepage</a></li>
+          <li><a href="./about.html">about</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./discord.html">Discord</a></li>
+          <li><a href="./youtube.html">YouTube</a></li>
+        </ul>
+      </div>
+      <a href="./r/privacy.html">
+        <p style="text-align: center; font-size: small">© Sayuj Kuickel</p>
+      </a>
+    </footer>
+  </body>
+</html>
