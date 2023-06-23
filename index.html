@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayuj</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <script src="./javascript/landing-page.js" defer></script>
+    <script src="./javascript/check-if-mobile.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <style>
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .alert-title {
+        display: none;
+
+        position: absolute;
+        z-index: 100;
+        font-size: 2rem;
+        font-weight: 900;
+        width: 10ch;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 2rem;
+      }
+      .alert-background {
+        position: absolute;
+        z-index: 99;
+        height: 0;
+        width: 0;
+        background: black;
+
+        display: grid;
+        place-items: center;
+      }
+
+      .arrow {
+        position: absolute;
+        font-size: 3rem;
+        left: 50%;
+        bottom: 20%;
+        width: 100%;
+        font-weight: 400;
+        display: none;
+      }
+      .arrow::before {
+        content: "click me!";
+        position: absolute;
+        bottom: -50%;
+        left: -5rem;
+      }
+      .alert-title-small {
+        font-size: 1rem;
+        color: gold;
+        line-height: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="blob"></div>
+    <div id="blur"></div>
+    <div class="body-content">
+      <div class="alert-background" id="alert-background">
+        <span class="alert-title" id="alert-title">
+          Please Use Desktop to View This Page!
+          <br />
+          <span class="alert-title-small">You will be redirected shortly </span>
+        </span>
+      </div>
+      <div class="arrow" id="arrow">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+      </div>
+      <div class="welcome-screen">
+        <h1>
+          <span class="magic">
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                />
+              </svg>
+            </span>
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                />
+              </svg>
+            </span>
+            <span class="magic-star">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z"
+                />
+              </svg>
+            </span>
+
+            <a
+              href="./about.html"
+              style="text-transform: uppercase; position: relative"
+              class="magic-text"
+              >Sayuj Kuickel
+            </a>
+          </span>
+        </h1>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", (event) => {
+        window.location = "https://sayuj.com.np/about.html";
+      });
+    </script>
+  </body>
+</html>

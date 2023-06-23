@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayuj</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <script src="./javascript/landing-page.js" defer></script>
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <style>
+      body {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .body-content {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      header {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="fancy-link">Home</a>
+      <a href="#" class="fancy-link">Contact</a>
+      <a href="./about.html" class="fancy-link">About</a>
+      <a href="./youtube.html" class="fancy-link">YouTube</a>
+    </header>
+    <div id="blob"></div>
+    <div id="blur"></div>
+    <script>
+      if (/Mobi/.test(navigator.userAgent)) {
+        const blob = document.getElementById("blob");
+        const blur = document.getElementById("blur");
+        const gradient = document.getElementById("mob-gradient");
+
+        gradient.style.display = `block`;
+        blur.style.display = `none`;
+        blob.style.display = `none`;
+      }
+    </script>
+  </body>
+</html>
