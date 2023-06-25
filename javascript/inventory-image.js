@@ -7,7 +7,7 @@ function changeImage() {
 
   image.src = selectedImage;
 
-  var downloadPath = selectedImage.replace("/inventory/", "/inventory/skins/");
+  var downloadPath = selectedImage.replace("/inv/", "/inv/skins/");
   downloadLink.href = downloadPath;
 }
 
