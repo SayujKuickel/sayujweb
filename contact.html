@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sayuj</title>
+
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- <script src="./js/live.js" defer></script> -->
+  </head>
+  <body>
+    <style>
+      #liveDiv {
+        display: none;
+      }
+    </style>
+    <div id="liveDiv">
+      <h2>Channel is Live!</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/LIVE_VIDEO_ID"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <header class="page-header" id="page-header">
+      <div class="nav-left">
+        <a href="https://sayuj.com.np/">
+          <i class="fa-solid fa-house"></i>
+          Sayuj
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="https://youtube.com/@sayuj?sub_confirmation=1">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://sayuj.com.np/socials.html">
+          <i class="fa-solid fa-link"></i>
+        </a>
+        <a href="https://sayuj.com.np/youtube.html/#skins">
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="body-content">
+      <h1>Contact</h1>
+      <div class="contact-form">
+        <form
+          action="https://formspree.io/f/mpzgqwvd"
+          method="POST"
+          class="form"
+        >
+          <div class="_row row1">
+            <input required type="text" placeholder="First Name" name="Fname" />
+            <input required type="text" placeholder="Last Name" name="Lname" />
+          </div>
+          <div class="_row row2">
+            <input required type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="_row row3">
+            <input
+              required
+              type="text"
+              placeholder="Phone Number"
+              name="number"
+            />
+          </div>
+          <div class="_row row4">
+            <textarea
+              required
+              name="comment"
+              placeholder="Your Comment"
+              cols="30"
+              rows="10"
+              style="resize: none"
+            ></textarea>
+          </div>
+          <div class="_row">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_captcha" value="false" />
+          </div>
+          <div class="_btn-row">
+            <button>SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
