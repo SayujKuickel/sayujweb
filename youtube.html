@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube | Sayuj</title>
+
+    <link rel="stylesheet" href="./sass/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./js/videos.js"></script>
+    <script src="./js/skins.js"></script>
+  </head>
+  <body>
+    <header class="page-header" id="page-header">
+      <div class="nav-left">
+        <a href="https://sayuj.com.np/">
+          <i class="fa-solid fa-house"></i>
+          Sayuj
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="./youtube.html">
+          <i class="fa-brands fa-youtube"></i>
+          <span class="lable">Youtube</span>
+        </a>
+        <a href="https://sayuj.com.np/socials.html">
+          <i class="fa-solid fa-link"></i> <span class="lable">Socials</span>
+        </a>
+        <a href="https://sayuj.com.np/youtube.html#skins">
+          <i class="fa-solid fa-download"></i>
+          <span class="lable">Skins</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="body-content">
+      <div class="profile-section">
+        <div class="profile-img-container">
+          <div>
+            <img
+              src="https://yt3.googleusercontent.com/KLPDPaaUKUacy7orvERiAZtjIzpOEjrItykfMCs-OmXq38ihKu9c51B1DQadPtF930jk2_x68Q=s800-c-k-c0x00ffffff-no-rj"
+              alt="pfp"
+            />
+          </div>
+        </div>
+        <div class="profile-text-container">
+          <h3>Welcome to My Channel!</h3>
+          <p class="subtitle">
+            I Make Awesome Minecraft Videos primarily for Nepali Audience.
+            Subscribe To get notified whenever i upload.
+          </p>
+        </div>
+      </div>
+      <h2 style="font-family: var(--ff-pixelated)">Recent Uploads</h2>
+
+      <style>
+        #video-container .video-item:nth-child(n + 3) {
+          display: none;
+        }
+      </style>
+      <div id="video-container"></div>
+
+      <div id="flow">
+        <a href="./r/youtube.html"
+          ><button class="seemore-btn btn">See More</button></a
+        >
+        <a href="https://youtube.com/@sayuj?sub_confirmation=1" target="_blank">
+          <button class="yt-btn btn">Youtube</button>
+        </a>
+      </div>
+
+      <h2 style="font-family: var(--ff-pixelated)" id="skins">
+        Download Skins
+      </h2>
+      <div class="skin-downloader">
+        <div class="controls">
+          <select id="imageSelect">
+            <option value="sayuj">Sayuj</option>
+            <option value="visal">Visal</option>
+            <option value="crystallinearc">Crystallinearc</option>
+            <option value="omen">Omen</option>
+            <option value="sakshyam">Ksakshyam</option>
+            <option value="theelitehat">TheEliteHat</option>
+            <option value="awpain">awpain</option>
+          </select>
+          <button id="downloadButton" class="btn">Download</button>
+        </div>
+
+        <div class="image-container"><div id="imageContainer"></div></div>
+      </div>
+
+      <h2
+        style="font-family: var(--ff-pixelated); margin-block: 2rem"
+        id="packs"
+      >
+        Download Packs
+      </h2>
+      <div class="packs-container">
+        <div class="pack">
+          <a href="./packs/sayuj'sheaven.zip" download="">
+            <div class="img-container">
+              <img src="./packs/heaven.png" alt="heaven" />
+            </div>
+            <p>Sayuj's Heaven</p>
+          </a>
+        </div>
+        <div class="pack">
+          <a href="./packs/ModelsBySayuj.zip" download="">
+            <div class="img-container">
+              <img src="./packs/modeling.png" alt="heaven" />
+            </div>
+            <p>Modeling Mobs</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- https://yt3.googleusercontent.com/KLPDPaaUKUacy7orvERiAZtjIzpOEjrItykfMCs-OmXq38ihKu9c51B1DQadPtF930jk2_x68Q=s800-c-k-c0x00ffffff-no-rj -->
+    </main>
+  </body>
+</html>
