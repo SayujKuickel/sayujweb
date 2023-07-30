@@ -29,6 +29,11 @@ const jsonData = {
       thumbnail: "https://i.ytimg.com/vi/hO99AKUQfg4/maxresdefault.jpg",
     },
     {
+      title: "I Tested STUPID Tiktok Hacks",
+      link: "https://youtu.be/TMM2h_TQtaI",
+      thumbnail: "https://i.ytimg.com/vi/TMM2h_TQtaI/maxresdefault.jpg",
+     },
+    {
       title: "How I trolled @NishantSAMA + Face Reveal",
       link: "https://www.youtube.com/watch?v=pyggqXeaViU",
       thumbnail: "https://i.ytimg.com/vi/pyggqXeaViU/maxresdefault.jpg",
