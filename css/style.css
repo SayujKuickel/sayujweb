@@ -206,7 +206,8 @@ body {
   margin-block: 2rem;
   gap: 1rem;
   height: 100%;
-  width: 100%;
+  width: calc(100vw - 4rem);
+  
   justify-content: center;
   margin-block: 2rem;
 }
@@ -223,6 +224,7 @@ body {
   margin-block: 3rem;
   align-items: center;
   gap: 0.5rem;
+  
   font-size: clamp(1rem, 2vw, 3rem);
 }
 
