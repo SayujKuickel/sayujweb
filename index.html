@@ -84,14 +84,14 @@
             const status = await getStatus();
 
             if (status.status === "Streaming") {
-                // statusDiv.textContent = `Channel ${status.channel} is currently live!`;
+              
                 const liveLink = document.createElement("a");
-                liveLink.textContent = " Channel is Live!🔴";
+                liveLink.textContent = "Channel is Live!🔴";
                 liveLink.href = `https://www.youtube.com/c/${status.channel}/live`;
                 statusDiv.appendChild(document.createElement("br"));
                 statusDiv.appendChild(liveLink);
             } else {
-                // statusDiv.textContent = `Channel ${status.channel} is not live at the moment.`;
+                statusDiv.textContent = `Channel ${status.channel} is not live at the moment.`;
             }
         }
 
