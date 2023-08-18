@@ -31,7 +31,7 @@
       }
     </style>
     <div id="status">
-      <h2 id="status">Channel is Live!</h2>
+      <h2 id="status"></h2>
      
     </div>
 
@@ -87,7 +87,7 @@
             if (status.status === "Streaming") {
                 // statusDiv.textContent = `Channel ${status.channel} is currently live!`;
                 const liveLink = document.createElement("a");
-                liveLink.textContent = " Live🔴";
+                liveLink.textContent = " Channel is Live!🔴";
                 liveLink.href = `https://www.youtube.com/c/${status.channel}/live`;
                 statusDiv.appendChild(document.createElement("br"));
                 statusDiv.appendChild(liveLink);
