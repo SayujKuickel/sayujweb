@@ -82,7 +82,16 @@ a {
   color: currentColor;
   text-decoration: none;
 }
-
+#status {
+  position: absolute;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid red;
+    background: hsl(0deg 100% 50% / 50%);
+    text-align: center;
+    font-size: .8rem;
+    top: 60vh;
+}
 /* font-family: 'Borel', cursive; */
 :root {
   --color-text: hsl(200, 23%, 95%);
