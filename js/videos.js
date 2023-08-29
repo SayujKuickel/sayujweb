@@ -1,62 +1,29 @@
-// script.js
-// Sample JSON data representing the videos
-const jsonData = {
-  videos: [
-    // {
-    //   title: "",
-    //   link: "",
-    //   thumbnail: "",
-    // },
-    {
-      title: "I Survived in One jar with @bofmomo",
-      link: "https://youtu.be/Z-wc_WGKFVc",
-      thumbnail: "https://i.ytimg.com/vi/Z-wc_WGKFVc/maxresdefault.jpg",
-    },
-    {
-      title: "Modeling Your Minecraft Ideas",
-      link: "https://www.youtube.com/watch?v=6ibtc4m8JUo&list=PLjKPrKuEWg0sZe8mUSjBmMLa3X8PFL4Id",
-      thumbnail: "https://i.ytimg.com/vi/6ibtc4m8JUo/maxresdefault.jpg",
-    },
-    {
-      title: "Minecraft But i Only Have One Chunk",
-      link: "https://www.youtube.com/playlist?list=PLjKPrKuEWg0vjQHyTV938RZJNh0VtsUUL",
-      thumbnail:
-        "https://i.ytimg.com/vi/suL3kylXLs0/hq720.jpg?sqp=-…j0AgKJDeAE=&rs=AOn4CLDEH_wxQiiAO1WxWkfQYpw4F365ZQ",
-    },
-    {
-      title: "I Played On ONE Block With Firends",
-      link: "https://youtu.be/hO99AKUQfg4",
-      thumbnail: "https://i.ytimg.com/vi/hO99AKUQfg4/maxresdefault.jpg",
-    },
-    {
-      title: "I Tested STUPID Tiktok Hacks",
-      link: "https://youtu.be/TMM2h_TQtaI",
-      thumbnail: "https://i.ytimg.com/vi/TMM2h_TQtaI/maxresdefault.jpg",
-     },
-    {
-      title: "How I trolled @NishantSAMA + Face Reveal",
-      link: "https://www.youtube.com/watch?v=pyggqXeaViU",
-      thumbnail: "https://i.ytimg.com/vi/pyggqXeaViU/maxresdefault.jpg",
-    },
-    {
-      title: "I Accepted Your BAD Minecraft Challenges",
-      link: "https://youtu.be/OZxUbDz-VmY",
-      thumbnail: "https://i.ytimg.com/vi/OZxUbDz-VmY/maxresdefault.jpg",
-    },
-    {
-      title: "Top Nepali minecraft Servers",
-      link: "https://www.youtube.com/watch?v=5oInqJbPjkw",
-      thumbnail:
-        "https://i.ytimg.com/vi/5oInqJbPjkw/hq720.jpg?sqp=-…j0AgKJDeAE=&rs=AOn4CLCZQ8WjMtvbVmQvbm36QCjL1iyktw",
-    },
+// Function to fetch JSON data from a URL
+async function fetchJSONData(url) {
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  return jsonData;
+}
 
-    // {
-    //   title: "",
-    //   link: "",
-    //   thumbnail: "",
-    // },
-  ],
-};
+// Function to create the video items dynamically
+async function createVideoItems() {
+  const videoContainer = document.getElementById("video-container");
+  const jsonUrl = "https://ytvedio.bishalluitel67696.workers.dev/"; // Replace with your JSON URL
+
+  try {
+    const jsonData = await fetchJSONData(jsonUrl);
+
+    // Loop through each video data in the JSON
+    jsonData.videos.forEach((videoData) => {
+      // ... (rest of your existing code to create video items)
+    });
+  } catch (error) {
+    console.error("Error fetching or processing JSON data:", error);
+  }
+}
+
+// Call the function to create the video items when the DOM is loaded
+document.addEventListener("DOMContentLoaded", createVideoItems);
 
 // Function to create the video items dynamically
 function createVideoItems() {
