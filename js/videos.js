@@ -15,7 +15,35 @@ async function createVideoItems() {
 
     // Loop through each video data in the JSON
     jsonData.videos.forEach((videoData) => {
-      // ... (rest of your existing code to create video items)
+      // Create the necessary elements
+      const videoItem = document.createElement("div");
+      videoItem.className = "video-item";
+
+      const videoLink = document.createElement("a");
+      videoLink.href = videoData.link;
+      videoLink.target = "_blank";
+
+      const imageContainer = document.createElement("div");
+      imageContainer.className = "image-container";
+
+      const thumbnailImg = document.createElement("img");
+      thumbnailImg.src = videoData.thumbnail;
+
+      const videoItemBody = document.createElement("div");
+      videoItemBody.className = "video-item-body";
+
+      const videoTitle = document.createElement("p");
+      videoTitle.textContent = videoData.title;
+
+      // Append the elements to create the desired structure
+      videoItem.appendChild(videoLink);
+      videoLink.appendChild(imageContainer);
+      imageContainer.appendChild(thumbnailImg);
+      videoLink.appendChild(videoItemBody);
+      videoItemBody.appendChild(videoTitle);
+
+      // Append the video item to the container
+      videoContainer.appendChild(videoItem);
     });
   } catch (error) {
     console.error("Error fetching or processing JSON data:", error);
@@ -24,46 +52,3 @@ async function createVideoItems() {
 
 // Call the function to create the video items when the DOM is loaded
 document.addEventListener("DOMContentLoaded", createVideoItems);
-
-// Function to create the video items dynamically
-function createVideoItems() {
-  const videoContainer = document.getElementById("video-container");
-
-  // Loop through each video data in the JSON
-  jsonData.videos.forEach((videoData) => {
-    // Create the necessary elements
-    const videoItem = document.createElement("div");
-    videoItem.className = "video-item";
-
-    const videoLink = document.createElement("a");
-    videoLink.href = videoData.link;
-    videoLink.target = "_blank";
-
-    const imageContainer = document.createElement("div");
-    imageContainer.className = "image-container";
-
-    const thumbnailImg = document.createElement("img");
-    thumbnailImg.src = videoData.thumbnail;
-
-    const videoItemBody = document.createElement("div");
-    videoItemBody.className = "video-item-body";
-
-    const videoTitle = document.createElement("p");
-    videoTitle.textContent = videoData.title;
-
-    // Append the elements to create the desired structure
-    videoItem.appendChild(videoLink);
-    videoLink.appendChild(imageContainer);
-    imageContainer.appendChild(thumbnailImg);
-    videoLink.appendChild(videoItemBody);
-    videoItemBody.appendChild(videoTitle);
-
-    // Append the video item to the container
-    videoContainer.appendChild(videoItem);
-  });
-}
-
-// Call the function to create the video items when the DOM is loaded
-document.addEventListener("DOMContentLoaded", createVideoItems);
-
-// -------------------------
