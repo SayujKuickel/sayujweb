@@ -3,23 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sayuj Kuickel</title>
     <!-- सयुज  -->
-    <link rel="stylesheet" target="_blank" href="/css/style.css" />
+    <title>Sayuj Kuickel</title>
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="favicon.ico" />
 
+    <!-- Meta tags -->
+    <meta
+      name="description"
+      content="Sayuj Kuickel - Frontend Developer based in Nepal. Portfolio, projects, skills, and experience."
+    />
+    <meta name="author" content="Sayuj Kuickel" />
+    <meta property="og:title" content="Sayuj Kuickel" />
+    <meta
+      property="og:description"
+      content="Frontend Developer based in Nepal. Explore my projects and skills."
+    />
+    <meta property="og:image" content="/assets/logo.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sayuj.com.np" />
+
+    <!-- CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script
       src="https://kit.fontawesome.com/6c293dea87.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Page Contents -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sayuj Kuickel",
+        "jobTitle": "Frontend Developer",
+        "url": "https://sayuj.com.np",
+        "sameAs": [
+          "https://github.com/SayujKuickel",
+          "https://www.linkedin.com/in/sayuj-kuickel-7a1449291/",
+          "https://www.instagram.com/sayujkuickel/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <main>
-      <!-- <img src="/assets/logo" alt="logo" /> -->
+    <button id="backToTop" class="bt-top-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <main>
       <img class="logo-main" src="/assets/logo.jpg" alt="logo" />
-      <!-- <h1></h1> -->
 
       <article>
         <p>I'm <strong>Sayuj Kuickel</strong> from Nepal.</p>
@@ -103,23 +136,6 @@
       </section>
 
       <section class="section">
-        <h3>Skills</h3>
-
-        <ul>
-          <li>Programming Languages - Javascript, Python, Java</li>
-          <li>Frontend - React, Next.js, Astro, Wordpress</li>
-          <li>Backend - Express.js, Sequelize, REST API, JWT Authentication</li>
-          <li>Databases - MySQL, MongoDB, Mongoose</li>
-          <li>
-            Tools & DevOps- Git, GitHub, VS Code, Postman, Docker (basic),
-            Vercel, Netlify
-          </li>
-          <li>Graphic Design - Adobe Photoshop, Canva, Figma</li>
-          <li>Video Editing - Adobe Premiere Pro</li>
-        </ul>
-      </section>
-
-      <section class="section">
         <h3>Experience</h3>
 
         <ol>
@@ -133,11 +149,92 @@
         </ol>
       </section>
 
+      <section class="section">
+        <h3>Skills</h3>
+
+        <ul>
+          <li>
+            Programming Languages
+            <p>- Javascript, Python, Java</p>
+          </li>
+          <li>
+            Frontend
+            <p>- React, Next.js, Astro Framework, tailwindcss, Wordpress</p>
+          </li>
+          <li>
+            Backend
+            <p>- Express.js, Sequelize, REST API, JWT Authentication</p>
+          </li>
+          <li>
+            Databases
+            <p>- MySQL, MongoDB, Mongoose</p>
+          </li>
+          <li>
+            Tools & DevOps
+            <p>- Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify</p>
+          </li>
+          <li>
+            Graphic Design
+            <p>- Adobe Photoshop, Canva, Figma</p>
+          </li>
+          <li>
+            Video Editing
+            <p>- Adobe Premiere Pro, Wondershare Filmora</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3>Certifications</h3>
+
+        <ol style="list-style-type: lower-roman">
+          <li>
+            <a target="_blank" href="https://www.credly.com/go/KSiC9e02">
+              Cloud Foundations <small>(AWS Academy)</small>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.credly.com/go/sQtTjniA">
+              Data Engineering
+              <small>(AWS Academy)</small>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.credly.com/go/99mpSRGl">
+              Machine Learning for Natural Language Processing
+              <small>(AWS Academy)</small>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.credly.com/go/BOcqt0xx">
+              Machine Learning Foundations <small>(AWS Academy)</small>
+            </a>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://www.sololearn.com/certificates/CC-FRZUQT2I"
+            >
+              Javascript Intermediate <small>(sololearn)</small>
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.sololearn.com/certificates/CC-AOIZT9SF"
+            >
+              Introduction to Java <small>(sololearn)</small>
+            </a>
+          </li>
+        </ol>
+      </section>
       <footer class="section">
         <p>
           <small> &copy; 2025 Sayuj Kuickel. </small>
         </p>
       </footer>
     </main>
+    <script src="/js/script.js"></script>
   </body>
 </html>

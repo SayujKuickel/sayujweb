@@ -1,12 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --ratio: 1.5;
-  --s1: 1rem;
-  --s2: 1.2rem;
-  --s3: 1.5rem;
-  --s4: 2.05rem;
-  --s5: 3.5rem;
+  --ratio: 0.5vw;
+
+  --s1: calc(1rem + var(--ratio));
+  --s2: calc(1.2rem + var(--ratio));
+  --s3: calc(1.5rem + var(--ratio));
+  --s4: calc(2.05rem + var(--ratio));
+  --s5: calc(3.5rem + var(--ratio));
+
+  --bg-color: #eaeaea;
+  --text-color: #212529;
+}
+
+body {
+  font-size: var(--s1);
+}
+
+p {
+  font-size: var(--s1);
+}
+
+h6 {
+  font-size: var(--s2);
+}
+
+h5 {
+  font-size: var(--s2);
+}
+
+h4 {
+  font-size: var(--s3);
+}
+
+h3 {
+  font-size: var(--s3);
+}
+
+h2 {
+  font-size: var(--s4);
+}
+
+h1 {
+  font-size: var(--s5);
 }
 
 body {
@@ -15,28 +51,11 @@ body {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
 
-  /* background-color: #eff3f5; */
-  background-color: #eaeaea;
-  color: #1c1d1e;
-  font-size: calc(0.5vw + 1.07rem);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: var(--ratio);
   scroll-behavior: smooth;
-}
-
-h1 {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-style: italic;
-}
-
-/* <img class="logo-main" src="/assets/logo.jpg" alt="logo" /> */
-.logo-main {
-  width: 6rem;
-  mix-blend-mode: multiply;
-
-  aspect-ratio: 5/3;
-  object-fit: cover;
-  margin-left: -0.45rem;
+  line-height: 1.6;
 }
 
 small {
@@ -62,11 +81,11 @@ article > p {
 }
 
 .section {
-  margin-top: 6vh;
+  margin-top: 8vh;
+  max-width: 60ch;
 }
 
 .section h3 {
-  font-size: calc(0.5vw + 1.25rem);
   font-weight: 650;
   margin-bottom: 0.5rem;
 }
@@ -89,6 +108,7 @@ ul li {
 a {
   cursor: pointer;
   text-decoration: underline;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a:visited:hover,
@@ -102,5 +122,32 @@ a:hover {
   gap: 0.5rem;
 }
 
-.link > a span {
+/*  */
+
+.logo-main {
+  width: 6rem;
+  mix-blend-mode: multiply;
+  aspect-ratio: 5/3;
+  object-fit: cover;
+  margin-left: -0.45rem;
+}
+
+.bt-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  aspect-ratio: 1;
+  height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.bt-top-btn:hover {
+  background-color: #1c1d1e22;
 }
