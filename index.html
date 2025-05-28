@@ -30,6 +30,21 @@
       crossorigin="anonymous"
     ></script>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css"
+    />
+
     <!-- Page Contents -->
     <script type="application/ld+json">
       {
@@ -55,7 +70,9 @@
     </button>
 
     <main>
-      <img class="logo-main" src="/assets/logo-red.png" alt="logo" />
+      <a href="/index.html">
+        <img class="logo-main" src="/assets/logo-red.png" alt="logo" />
+      </a>
 
       <article>
         <p>I'm <strong class="">Sayuj Kuickel</strong> from Nepal.</p>
@@ -68,7 +85,7 @@
         <ul>
           <li class="link">
             <a target="_blank" href="https://github.com/SayujKuickel/">
-              <i class="fa-brands fa-github"></i>
+              <i class="fi fi-brands-github"></i>
               <span> Github </span>
             </a>
           </li>
@@ -77,34 +94,24 @@
               target="_blank"
               href="https://www.linkedin.com/in/sayuj-kuickel-7a1449291/"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i class="fi fi-brands-linkedin"></i>
               <span> LinkedIn </span>
             </a>
           </li>
 
           <li class="link">
-            <a target="_blank" href="https://www.instagram.com/sayujkuickel/">
-              <i class="fa-brands fa-instagram"></i>
-              <span>
-                Instagram
-                <small>(Personal)</small>
-              </span>
+            <a target="_blank" href="mailto:mail@sayuj.com.np">
+              <i class="fi fi-br-envelope"></i>
+              <span>mail@sayuj.com.np</span>
             </a>
           </li>
 
-          <li class="link">
-            <a target="_blank" href="mailto:sayujkuickel@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-              <span> sayujkuickel@gmail.com </span>
-            </a>
-          </li>
-
-          <li>
+          <!-- <li>
             <a href="/file/cv.pdf" target="_blank">
               <i class="fa-regular fa-file"></i>
               <span> Download My CV </span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </section>
 
@@ -112,19 +119,27 @@
         <h3 class="span-styled">Projects</h3>
         <ul>
           <li>
-            <a target="_blank" href="https://www.adselectrical.com.au/">
-              ADS Electrical, NSW Australia
+            <a
+              target="_blank"
+              href="https://github.com/SayujKuickel/kathmandu-bus-routes"
+            >
+              Kathmandu Bus Routes
             </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://churchill.nsw.edu.au/">
-              Churchill Institute of Higher Education (CHIE), NSW Australia
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://attendance.churchill.nsw.edu.au/">
-              CHIE Attendance Management Dashboard
-            </a>
+            <span class="ml-2 text-base">
+              <a
+                target="_blank"
+                href="https://kathmandu-bus-routes.vercel.app/"
+              >
+                Demo,
+              </a>
+
+              <a
+                target="_blank"
+                href="https://www.notion.so/2002054224e68038b8f1dd5e64f0a636?v=2002054224e681548951000c5b4845fc"
+              >
+                Details
+              </a>
+            </span>
           </li>
           <li>
             <a
@@ -132,11 +147,21 @@
               href="https://github.com/SayujKuickel/manage-branch"
             >
               Branch Management System
-              <small>
-                <a target="_blank" href="https://manage-branch.vercel.app">
-                  (Demo)
-                </a>
-              </small>
+              <a target="_blank" href="https://manage-branch.vercel.app">
+                <small> (Demo) </small>
+              </a>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://attendance.churchill.nsw.edu.au/">
+              CHIE Attendance Management Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="/projects.html">
+              <i class="fi fi-br-share-square"></i>
+              View All
             </a>
           </li>
         </ul>
@@ -154,41 +179,6 @@
             </a>
           </li>
         </ol>
-      </section>
-
-      <section class="section">
-        <h3 class="span-styled">Skills</h3>
-
-        <ul>
-          <li>
-            Programming Languages
-            <p>- Javascript, Python, Java</p>
-          </li>
-          <li>
-            Frontend
-            <p>- React, Next.js, Astro Framework, tailwindcss, Wordpress</p>
-          </li>
-          <li>
-            Backend
-            <p>- Express.js, Sequelize, REST API, JWT Authentication</p>
-          </li>
-          <li>
-            Databases
-            <p>- MySQL, MongoDB, Mongoose</p>
-          </li>
-          <li>
-            Tools & DevOps
-            <p>- Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify</p>
-          </li>
-          <li>
-            Graphic Design
-            <p>- Adobe Photoshop, Canva, Figma</p>
-          </li>
-          <li>
-            Video Editing
-            <p>- Adobe Premiere Pro, Wondershare Filmora</p>
-          </li>
-        </ul>
       </section>
 
       <section class="section">
@@ -235,6 +225,41 @@
             </a>
           </li>
         </ol>
+      </section>
+
+      <section class="section">
+        <h3 class="span-styled">Skills</h3>
+
+        <ul>
+          <li>
+            Programming Languages
+            <p>- Javascript, Python, Java</p>
+          </li>
+          <li>
+            Frontend
+            <p>- React, Next.js, Astro Framework, tailwindcss, Wordpress</p>
+          </li>
+          <li>
+            Backend
+            <p>- Express.js, Sequelize, REST API, JWT Authentication</p>
+          </li>
+          <li>
+            Databases
+            <p>- MySQL, MongoDB, Mongoose</p>
+          </li>
+          <li>
+            Tools & DevOps
+            <p>- Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify</p>
+          </li>
+          <li>
+            Graphic Design
+            <p>- Adobe Photoshop, Canva, Figma</p>
+          </li>
+          <li>
+            Video Editing
+            <p>- Adobe Premiere Pro, Wondershare Filmora</p>
+          </li>
+        </ul>
       </section>
 
       <footer class="section">
