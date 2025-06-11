@@ -76,7 +76,11 @@
 
       <article>
         <p>I'm <strong class="">Sayuj Kuickel</strong> from Nepal.</p>
-        <p>I am a Frontend Developer.</p>
+        <p class="md:w-2/3">
+          I am a Junior Frontend Developer. I build clean, responsive web-apps
+          which are user-friendly and intuitive.
+          <br />
+        </p>
       </article>
 
       <section class="section">
@@ -135,21 +139,20 @@
             >
               Kathmandu Bus Routes
             </a>
-            <span class="ml-2 text-base">
-              <a
-                target="_blank"
-                href="https://kathmandu-bus-routes.vercel.app/"
-              >
-                Demo,
-              </a>
-
-              <a
-                target="_blank"
-                href="https://www.notion.so/2002054224e68038b8f1dd5e64f0a636?v=2002054224e681548951000c5b4845fc"
-              >
-                Details
-              </a>
-            </span>
+            <a
+              target="_blank"
+              class="text-base"
+              href="https://bus-routes.sayuj.com.np/"
+            >
+              (Demo)
+            </a>
+            <a
+              target="_blank"
+              class="text-base"
+              href="https://www.notion.so/2002054224e68038b8f1dd5e64f0a636?v=2002054224e681548951000c5b4845fc"
+            >
+              (Details)
+            </a>
           </li>
           <li>
             <a
@@ -157,8 +160,12 @@
               href="https://github.com/SayujKuickel/manage-branch"
             >
               Branch Management System
-              <a target="_blank" href="https://manage-branch.vercel.app">
-                <small> (Demo) </small>
+              <a
+                target="_blank"
+                class="text-base"
+                href="https://manage-branch.vercel.app"
+              >
+                (Demo)
               </a>
             </a>
           </li>
@@ -185,7 +192,7 @@
             <a target="_blank" href="https://weboro.com.au/">
               Frontend Development in React JS / Next JS - Weboro, Australia
 
-              <small>(Remote)</small>
+              <span class="text-base">(Remote)</span>
             </a>
           </li>
         </ol>
@@ -197,24 +204,25 @@
         <ol style="list-style-type: lower-roman">
           <li>
             <a target="_blank" href="https://www.credly.com/go/KSiC9e02">
-              Cloud Foundations <small>(AWS Academy)</small>
+              Cloud Foundations <span class="text-base">(AWS Academy)</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.credly.com/go/sQtTjniA">
               Data Engineering
-              <small>(AWS Academy)</small>
+              <span class="text-base">(AWS Academy)</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.credly.com/go/99mpSRGl">
               Machine Learning for Natural Language Processing
-              <small>(AWS Academy)</small>
+              <span class="text-base">(AWS Academy)</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://www.credly.com/go/BOcqt0xx">
-              Machine Learning Foundations <small>(AWS Academy)</small>
+              Machine Learning Foundations
+              <span class="text-base">(AWS Academy)</span>
             </a>
           </li>
 
@@ -223,7 +231,7 @@
               target="_blank"
               href="https://www.sololearn.com/certificates/CC-FRZUQT2I"
             >
-              Javascript Intermediate <small>(sololearn)</small>
+              Javascript Intermediate <span class="text-base">(sololearn)</span>
             </a>
           </li>
           <li>
@@ -231,7 +239,7 @@
               target="_blank"
               href="https://www.sololearn.com/certificates/CC-AOIZT9SF"
             >
-              Introduction to Java <small>(sololearn)</small>
+              Introduction to Java <span class="text-base">(sololearn)</span>
             </a>
           </li>
         </ol>
@@ -240,48 +248,54 @@
       <section class="section">
         <h3 class="span-styled">Skills</h3>
 
-        <ul>
+        <ul class="flex flex-col gap-3">
           <li>
             Programming Languages
-            <p>- Javascript, Python, Java</p>
+            <p class="">- Javascript, Python, Java</p>
           </li>
           <li>
             Frontend
-            <p>- React, Next.js, Astro Framework, tailwindcss, Wordpress</p>
+            <p class="">
+              - React, Next.js, Astro Framework, tailwindcss, Wordpress
+            </p>
           </li>
           <li>
             Backend
-            <p>- Express.js, Sequelize, REST API, JWT Authentication</p>
+            <p class="">
+              - Express.js, Sequelize, REST API, JWT Authentication
+            </p>
           </li>
           <li>
             Databases
-            <p>- MySQL, MongoDB, Mongoose</p>
+            <p class="">- MySQL, MongoDB, Mongoose</p>
           </li>
           <li>
             Tools & DevOps
-            <p>- Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify</p>
+            <p class="">
+              - Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify
+            </p>
           </li>
           <li>
             Graphic Design
-            <p>- Adobe Photoshop, Canva, Figma</p>
+            <p class="">- Adobe Photoshop, Canva, Figma</p>
           </li>
           <li>
             Video Editing
-            <p>- Adobe Premiere Pro, Wondershare Filmora</p>
+            <p class="">- Adobe Premiere Pro, Wondershare Filmora</p>
           </li>
         </ul>
       </section>
 
       <footer class="section">
-        <p>
-          <small>
-            &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Sayuj Kuickel
-          </small>
+        <p class="text-base">
+          &copy;
+
+          <span id="date"></span>
+          Sayuj Kuickel
         </p>
+        <script>
+          document.getElementById("date").innerHTML = new Date().getFullYear();
+        </script>
       </footer>
     </main>
     <script src="/js/script.js"></script>

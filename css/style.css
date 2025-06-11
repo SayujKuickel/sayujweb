@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --ratio: 0.45vw;
+  --ratio: 0.6vw;
 
   --s1: calc(1rem + var(--ratio));
   --s2: calc(1.2rem + var(--ratio));
@@ -14,10 +14,6 @@
 }
 
 body {
-  font-size: var(--s1);
-}
-
-p {
   font-size: var(--s1);
 }
 
@@ -131,7 +127,6 @@ ul li {
 
 a {
   cursor: pointer;
-  text-decoration: underline;
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -168,30 +163,35 @@ a:hover {
 
   display: grid;
   place-items: center;
-  border-radius: 9999px;
   cursor: pointer;
 
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  border-radius: 100%;
+
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   animation: fade-scale-in 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.bt-top-btn:hover {
   background-color: #1c1d1e22;
 }
 
-/*  */
-/*  */
-
-#backToTop {
+.bt-top-btn:hover {
+  background-color: #1c1d1e34;
+  border-radius: 1rem;
 }
+
+/*  */
+/*  */
 
 @keyframes fade-scale-in {
   0% {
     transform: scale(0);
     opacity: 0;
     transform: translateY(8px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section {
+    margin-top: calc(var(--ratio) * 25);
+    max-width: 60ch;
   }
 }

@@ -68,7 +68,10 @@
       </a>
 
       <article>
-        <p>Some of my projects!</p>
+        <p class="md:w-2/3">
+          A showcase of my frontend development projects, professional web
+          solutions for various clients and much more!
+        </p>
       </article>
 
       <section class="section">
@@ -81,22 +84,22 @@
             >
               Kathmandu Bus Routes
             </a>
-            <span class="ml-2 text-base">
-              <a
-                target="_blank"
-                href="https://kathmandu-bus-routes.vercel.app/"
-              >
-                Demo,
-              </a>
-
-              <a
-                target="_blank"
-                href="https://www.notion.so/2002054224e68038b8f1dd5e64f0a636?v=2002054224e681548951000c5b4845fc"
-              >
-                Details
-              </a>
-            </span>
+            <a
+              target="_blank"
+              class="text-base"
+              href="https://bus-routes.sayuj.com.np/"
+            >
+              (Demo)
+            </a>
+            <a
+              target="_blank"
+              class="text-base"
+              href="https://www.notion.so/2002054224e68038b8f1dd5e64f0a636?v=2002054224e681548951000c5b4845fc"
+            >
+              (Details)
+            </a>
           </li>
+
           <li>
             <a
               target="_blank"
@@ -129,22 +132,22 @@
       <footer class="section">
         <a
           href="/index.html"
-          class="text-sm flex items-center gap-1 w-fit"
+          class="text-base flex items-center gap-1 w-fit"
           style="text-decoration: none"
         >
           <i class="fi fi-br-angle-left flex"></i>
           <span>Go Home </span>
         </a>
 
-        <p>
-          <small>
-            &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Sayuj Kuickel
-          </small>
+        <p class="text-base">
+          &copy;
+
+          <span id="date"></span>
+          Sayuj Kuickel
         </p>
+        <script>
+          document.getElementById("date").innerHTML = new Date().getFullYear();
+        </script>
       </footer>
     </main>
     <script src="/js/script.js"></script>
