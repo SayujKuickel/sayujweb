@@ -27,6 +27,10 @@ const projects = [
         name: "(Demo)",
         url: "https://manage-branch.vercel.app",
       },
+      {
+        name: `(Details)`,
+        url: "https://github.com/SayujKuickel/branch-management-dashboard/blob/main/README.md",
+      },
     ],
   },
   {
@@ -45,10 +49,18 @@ const projects = [
         name: "(Website)",
         url: "https://churchill.nsw.edu.au/",
       },
+      {
+        name: "(Student Hub Website)",
+        url: "https://student.churchill.nsw.edu.au/",
+      },
+      {
+        name: "(Agent Hub Website)",
+        url: "https://agent.churchill.nsw.edu.au/",
+      },
     ],
   },
   {
-    name: "CHIE Attendance Management Dashboard",
+    name: "CHIE Attendance Management Dashboard (Frontend)",
     links: [
       {
         name: "(Website)",
@@ -110,7 +122,7 @@ function getListItem(item) {
 function getListUrlText(url, textContext) {
   const a = document.createElement("a");
   a.href = url;
-  a.className = "ml-1 text-base underline";
+  a.className = "ml-1 text-base underline sm:text-nowrap";
   a.target = "_blank";
   a.textContent = textContext;
   return a;
