@@ -132,8 +132,8 @@ function getViewAllItem() {
   const viewAllLi = document.createElement("li");
   const viewAllLink = document.createElement("a");
   viewAllLink.href = "/projects.html";
+  viewAllLi.className = "text-base md:text-xl mt-4";
   viewAllLink.innerHTML = `<i class="fi fi-br-share-square"></i> View All`;
   viewAllLi.appendChild(viewAllLink);
-
   return viewAllLi;
 }
