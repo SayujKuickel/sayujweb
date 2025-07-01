@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- सयुज  -->
-    <title>Sayuj Kuickel</title>
+    <!--   -->
+    <title>Sayuj Kuickel | Projects</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="/favicon.ico" />
 
@@ -25,9 +25,15 @@
 
     <!-- CDNs -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.4.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css"
     />
 
     <!-- Page Contents -->
@@ -58,41 +64,97 @@
     </button>
 
     <main>
-      <a href="/index.html">
-        <img
-          class="logo-main"
-          src="/assets/sayuj-red-transparent.png"
-          alt="logo"
-        />
-      </a>
+      <header class="section">
+        <a href="/index.html">
+          <img
+            class="logo-main"
+            src="/assets/sayuj-red-transparent.png"
+            alt="logo"
+          />
+        </a>
 
-      <article>
         <p class="md:w-2/3">
-          A showcase of my frontend development projects, professional web
-          solutions for various clients and much more!
+          A showcase of my frontend development projects, skills, professional
+          web solutions for various clients and much more!
         </p>
-      </article>
+
+        <div class="flex items-center flex-wrap gap-2 mt-4 mb-2">
+          <a href="/index.html" class="text-lg flex items-center gap-1 w-fit">
+            <i class="fi fi-br-angle-left flex"></i>
+            <span>Go Home</span>
+          </a>
+          <a
+            target="_blank"
+            href="https://app.sajilocv.com/cv/e945cdfa-cfcd-4b0a-bf6f-4feb506f6f22"
+            class="text-lg flex items-center gap-1 w-fit"
+          >
+            <i class="fi fi-br-file"></i>
+            <span>View CV</span>
+          </a>
+        </div>
+      </header>
 
       <section class="section">
         <h3 class="span-styled">Projects</h3>
+
         <ul id="projectsUl"></ul>
       </section>
 
-      <footer class="section">
+      <section class="section">
+        <h3 class="span-styled">Skills</h3>
+
+        <ul class="flex flex-col gap-3">
+          <li>
+            Programming Languages
+            <p class="">- Javascript, Python, Java</p>
+          </li>
+          <li>
+            Frontend
+            <p class="">
+              - React, Next.js, Astro Framework, tailwindcss, Wordpress
+            </p>
+          </li>
+          <li>
+            Backend
+            <p class="">
+              - Express.js, Sequelize, REST API, JWT Authentication
+            </p>
+          </li>
+          <li>
+            Databases
+            <p class="">- MySQL, MongoDB, Mongoose</p>
+          </li>
+          <li>
+            Tools & DevOps
+            <p class="">
+              - Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify
+            </p>
+          </li>
+          <li>
+            Graphic Design
+            <p class="">- Adobe Photoshop, Canva, Figma</p>
+          </li>
+          <li>
+            Video Editing
+            <p class="">- Adobe Premiere Pro, Wondershare Filmora</p>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="max-w-[60ch]">
         <a
           href="/index.html"
-          class="text-base flex items-center gap-1 w-fit mb-6"
-          style="text-decoration: none"
+          class="text-base flex items-center gap-1 w-fit mb-2"
         >
           <i class="fi fi-br-angle-left flex"></i>
-          <span>Go Home </span>
+          <span>Go Home</span>
         </a>
 
-        <p class="text-base">
+        <p class="text-sm">
           &copy;
 
           <span id="date"></span>
-          Sayuj Kuickel
+          सयुज कुईकेल
         </p>
         <script>
           document.getElementById("date").innerHTML = new Date().getFullYear();

@@ -63,73 +63,89 @@
     </button>
 
     <main>
-      <a href="/index.html">
-        <img
-          class="logo-main"
-          src="/assets/sayuj-red-transparent.png"
-          alt="logo"
-        />
-      </a>
+      <header class="section">
+        <a href="/index.html">
+          <img
+            class="logo-main"
+            src="/assets/sayuj-red-transparent.png"
+            alt="logo"
+          />
+        </a>
 
-      <article>
-        <p>I'm <strong class="">Sayuj Kuickel</strong> from Nepal.</p>
+        <p class="md:w-2/3">
+          I'm <strong class="">Sayuj Kuickel</strong> from Nepal.
+        </p>
         <p class="md:w-2/3">
           I am a Junior Frontend Developer. I build clean, responsive web-apps
           which are user-friendly and intuitive.
-          <br />
         </p>
-      </article>
+
+        <div class="flex items-center flex-wrap gap-2 mt-4 mb-2">
+          <a
+            href="/projects.html"
+            class="text-lg flex items-center gap-1 w-fit"
+          >
+            <i class="fi fi-br-link"></i>
+            <span>See my Works</span>
+          </a>
+          <a
+            target="_blank"
+            href="https://app.sajilocv.com/cv/e945cdfa-cfcd-4b0a-bf6f-4feb506f6f22"
+            class="text-lg flex items-center gap-1 w-fit"
+          >
+            <i class="fi fi-br-file"></i>
+            <span>View CV</span>
+          </a>
+        </div>
+      </header>
 
       <section class="section">
         <h3 class="span-styled">Find me on!</h3>
 
         <ul>
-          <li class="link">
-            <a target="_blank" href="https://github.com/SayujKuickel/">
-              <i class="fi fi-brands-github"></i>
+          <li class="">
+            <a
+              class="flex items-center gap-1"
+              target="_blank"
+              href="https://github.com/SayujKuickel/"
+            >
+              <i class="fi fi-brands-github flex"></i>
               <span> Github </span>
             </a>
           </li>
-          <li class="link">
+          <li class="">
             <a
+              class="flex items-center gap-1"
               target="_blank"
               href="https://www.linkedin.com/in/sayuj-kuickel-7a1449291/"
             >
-              <i class="fi fi-brands-linkedin"></i>
+              <i class="fi fi-brands-linkedin flex"></i>
               <span> LinkedIn </span>
             </a>
           </li>
 
-          <li class="link">
+          <li class="">
             <a
+              class="flex items-center gap-1"
               target="_blank"
               href="https://garrulous-belly-2d2.notion.site/2022054224e680468c5dda9793005f7e?pvs=105"
             >
-              <i class="fi fi-br-messages"></i>
+              <i class="fi fi-br-messages flex"></i>
               <span>Message</span>
             </a>
           </li>
 
-          <li class="link">
-            <a target="_blank" href="mailto:mail@sayuj.com.np">
-              <i class="fi fi-br-envelope"></i>
+          <li class="">
+            <a
+              class="flex items-center gap-1"
+              target="_blank"
+              href="mailto:mail@sayuj.com.np"
+            >
+              <i class="fi fi-br-envelope flex"></i>
               <span>mail@sayuj.com.np</span>
             </a>
           </li>
-
-          <!-- <li>
-            <a href="/file/cv.pdf" target="_blank">
-              <i class="fa-regular fa-file"></i>
-              <span> Download My CV </span>
-            </a>
-          </li> -->
         </ul>
-      </section>
-
-      <section class="section">
-        <h3 class="span-styled">Projects</h3>
-
-        <ul id="projectsUlHomePage"></ul>
       </section>
 
       <section class="section">
@@ -137,10 +153,12 @@
         <ol>
           <li>
             <a target="_blank" href="https://weboro.com.au/">
-              Frontend Development in React JS / Next JS - Weboro, Australia
-
-              <span class="text-base">(Remote)</span>
+              <strong>Frontend Developer</strong> Internship at Weboro,
+              Australia
+              <span class="text-base">(June 2024 - Jan 2025)</span>
             </a>
+            <p>- Built React/Next.js-based web apps for Australian clients</p>
+            <p>- Collaborated with backend teams</p>
           </li>
         </ol>
       </section>
@@ -192,53 +210,12 @@
         </ol>
       </section>
 
-      <section class="section">
-        <h3 class="span-styled">Skills</h3>
-
-        <ul class="flex flex-col gap-3">
-          <li>
-            Programming Languages
-            <p class="">- Javascript, Python, Java</p>
-          </li>
-          <li>
-            Frontend
-            <p class="">
-              - React, Next.js, Astro Framework, tailwindcss, Wordpress
-            </p>
-          </li>
-          <li>
-            Backend
-            <p class="">
-              - Express.js, Sequelize, REST API, JWT Authentication
-            </p>
-          </li>
-          <li>
-            Databases
-            <p class="">- MySQL, MongoDB, Mongoose</p>
-          </li>
-          <li>
-            Tools & DevOps
-            <p class="">
-              - Git, GitHub, VS Code, Postman, Docker, Vercel, Netlify
-            </p>
-          </li>
-          <li>
-            Graphic Design
-            <p class="">- Adobe Photoshop, Canva, Figma</p>
-          </li>
-          <li>
-            Video Editing
-            <p class="">- Adobe Premiere Pro, Wondershare Filmora</p>
-          </li>
-        </ul>
-      </section>
-
-      <footer class="section">
-        <p class="text-base">
+      <footer class="max-w-[60ch]">
+        <p class="text-sm">
           &copy;
 
           <span id="date"></span>
-          Sayuj Kuickel
+          सयुज कुईकेल
         </p>
         <script>
           document.getElementById("date").innerHTML = new Date().getFullYear();

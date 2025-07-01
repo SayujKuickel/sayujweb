@@ -34,15 +34,6 @@ const projects = [
     ],
   },
   {
-    name: "ADS Electrical, NSW Australia",
-    links: [
-      {
-        name: "(Website)",
-        url: "https://www.adselectrical.com.au/",
-      },
-    ],
-  },
-  {
     name: "Churchill Institute of Higher Education (CHIE), NSW Australia",
     links: [
       {
@@ -69,20 +60,19 @@ const projects = [
     ],
   },
   {
-    name: "Aced Electrical",
+    name: "Other Projects",
     links: [
       {
-        name: "(Demo)",
-        url: "https://aced-electrical-astro.vercel.app/",
+        name: "ADS Electrical Australia",
+        url: "https://www.adselectrical.com.au/",
       },
-    ],
-  },
-  {
-    name: "Collcat AE",
-    links: [
       {
-        name: "(Demo)",
+        name: "Collcat AE",
         url: "https://collcat.vercel.app/",
+      },
+      {
+        name: "Aced Electrical",
+        url: "https://aced-electrical-astro.vercel.app/",
       },
     ],
   },
@@ -93,47 +83,51 @@ const projectsUlHomePage = document.getElementById("projectsUlHomePage");
 
 if (projectsUl) {
   projects.forEach((project) => {
-    const listItem = getListItem(project);
-    projectsUl.appendChild(listItem);
+    projectsUl.appendChild(getListItem(project));
   });
 }
 
 if (projectsUlHomePage) {
   projects.slice(0, 4).forEach((project) => {
-    const listItem = getListItem(project);
-    projectsUlHomePage.appendChild(listItem);
+    projectsUlHomePage.appendChild(getListItem(project));
   });
-
-  const viewAllLi = getViewAllItem();
-  projectsUlHomePage.appendChild(viewAllLi);
+  projectsUlHomePage.appendChild(getViewAllItem());
 }
 
-function getListItem(item) {
+function getListItem(project) {
   const li = document.createElement("li");
-  li.textContent = item?.name;
 
-  item.links.forEach((link) => {
+  const nameText = document.createTextNode(project?.name || "");
+  li.appendChild(nameText);
+
+  project.links?.forEach((link) => {
+    const space = document.createTextNode(" ");
+    li.appendChild(space);
     li.appendChild(getListUrlText(link?.url, link?.name));
   });
 
   return li;
 }
 
-function getListUrlText(url, textContext) {
+function getListUrlText(url, text) {
   const a = document.createElement("a");
   a.href = url;
-  a.className = "ml-1 text-base underline sm:text-nowrap";
+  a.className = "text-base underline sm:text-nowrap";
   a.target = "_blank";
-  a.textContent = textContext;
+  a.rel = "noopener noreferrer";
+  a.textContent = text || "Link";
   return a;
 }
 
 function getViewAllItem() {
-  const viewAllLi = document.createElement("li");
-  const viewAllLink = document.createElement("a");
-  viewAllLink.href = "/projects.html";
-  viewAllLi.className = "text-base md:text-xl mt-4";
-  viewAllLink.innerHTML = `<i class="fi fi-br-share-square"></i> View All`;
-  viewAllLi.appendChild(viewAllLink);
-  return viewAllLi;
+  const li = document.createElement("li");
+  li.className = "text-base md:text-xl mt-4";
+
+  const a = document.createElement("a");
+  a.href = "/projects.html";
+  a.innerHTML = `<i class="fi fi-br-share-square"></i> View All`;
+  a.className = "underline";
+
+  li.appendChild(a);
+  return li;
 }
