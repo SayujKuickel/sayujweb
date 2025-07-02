@@ -60,12 +60,17 @@ const projects = [
     ],
   },
   {
-    name: "Other Projects",
+    name: "ADS Electrical Australia",
     links: [
       {
-        name: "ADS Electrical Australia",
+        name: "(Website)",
         url: "https://www.adselectrical.com.au/",
       },
+    ],
+  },
+  {
+    name: "Other Projects",
+    links: [
       {
         name: "Collcat AE",
         url: "https://collcat.vercel.app/",
@@ -79,7 +84,6 @@ const projects = [
 ];
 
 const projectsUl = document.getElementById("projectsUl");
-const projectsUlHomePage = document.getElementById("projectsUlHomePage");
 
 if (projectsUl) {
   projects.forEach((project) => {
@@ -87,22 +91,15 @@ if (projectsUl) {
   });
 }
 
-if (projectsUlHomePage) {
-  projects.slice(0, 4).forEach((project) => {
-    projectsUlHomePage.appendChild(getListItem(project));
-  });
-  projectsUlHomePage.appendChild(getViewAllItem());
-}
-
 function getListItem(project) {
   const li = document.createElement("li");
 
   const nameText = document.createTextNode(project?.name || "");
   li.appendChild(nameText);
+  li.className = "leading-7 mb-3";
 
   project.links?.forEach((link) => {
-    const space = document.createTextNode(" ");
-    li.appendChild(space);
+    li.appendChild(document.createTextNode(" "));
     li.appendChild(getListUrlText(link?.url, link?.name));
   });
 
@@ -117,17 +114,4 @@ function getListUrlText(url, text) {
   a.rel = "noopener noreferrer";
   a.textContent = text || "Link";
   return a;
-}
-
-function getViewAllItem() {
-  const li = document.createElement("li");
-  li.className = "text-base md:text-xl mt-4";
-
-  const a = document.createElement("a");
-  a.href = "/projects.html";
-  a.innerHTML = `<i class="fi fi-br-share-square"></i> View All`;
-  a.className = "underline";
-
-  li.appendChild(a);
-  return li;
 }
